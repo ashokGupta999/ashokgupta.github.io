@@ -1,0 +1,56 @@
+[
+  {
+    "title": "The January 2022 Hunga eruption cooled the Southern Hemisphere in 2022 and 2023",
+    "authors": "Gupta\u00a0et\u00a0al.,\u00a02025",
+    "journal": "Communications\u00a0Earth\u00a0&\u00a0Environment",
+    "summary": "The 2022 Hunga eruption of underwater volcano Hunga Tonga\u2013Hunga Ha\u02bbapai did not warm the planet as was expected but actually reduced temperatures over the Southern Hemisphere by 0.1 C.",
+    "bottom": "The Hunga Tonga produced a temporary cooling (~\u22120.10\u00a0K) in 2022 and 2023, challenging early projections.",
+    "image": "Screen\u00a0Shot\u00a02025\u201104\u201119\u00a0at\u00a011.15.46\u00a0PM.png",
+    "category": "Climate\u00a0Impacts\u00a0of\u00a0Volcano"
+  },
+  {
+    "title": "Warm vs. Cold Rain in Storms",
+    "authors": "Gupta\u00a0et\u00a0al.,\u00a02023",
+    "journal": "Communications\u00a0Earth\u00a0&\u00a0Environment",
+    "summary": "Storm simulations reveal warm\u2011rain processes form up to\u00a0~80% of precipitation when cloud bases warm to\u00a0~20\u00a0\u00b0C; cold\u2011base storms remain ice\u2011dominated.",
+    "bottom": "Cloud\u2011base warming\u00a0(~10\u201320\u00a0K) shifts precipitation toward warm\u2011rain\u00a0(~80%).",
+    "image": "Fig_6a.png",
+    "category": "Cloud\u00a0Microphysics\u00a0&\u00a0Precipitation\u00a0Mechanisms"
+  },
+  {
+    "title": "Volcanic Umbrella Clouds: Insights from Hunga Tonga",
+    "authors": "Gupta\u00a0et\u00a0al.,\u00a02022",
+    "journal": "Nature\u00a0Communications\u00a0Earth\u00a0&\u00a0Environment",
+    "summary": "Satellite observations captured record\u00a031\u00a0km umbrella clouds with dual ice\u2011rich layers during Hunga Tonga eruption, redefining eruption\u2011impact models.",
+    "bottom": "Record\u2011high volcanic clouds (~31\u00a0km) reshape understanding of eruption climate effects.",
+    "image": "Fig6b.png",
+    "category": "Climate\u00a0Impacts\u00a0of\u00a0Volcano"
+  },
+  {
+    "title": "Ice Multiplication in Convective Storms",
+    "authors": "Waman\u00a0et\u00a0al.,\u00a02022",
+    "journal": "Journal\u00a0of\u00a0Atmospheric\u00a0Sciences",
+    "summary": "Secondary ice production peaks (\u00d710\u00b3) near \u221212\u00a0\u00b0C cloud tops; fragmentation &\u00a0Hallett\u2011Mossop processes dominate, influencing precipitation dynamics.",
+    "bottom": "Ice multiplication peak (~10\u00b3) at \u221212\u00a0\u00b0C is critical for precipitation forecasts.",
+    "image": "Fig_5b.png",
+    "category": "Secondary\u00a0Ice\u00a0Production\u00a0Processes"
+  },
+  {
+    "title": "Biological Aerosols and Ice Formation in Clouds",
+    "authors": "Patade\u00a0et\u00a0al.,\u00a02022",
+    "journal": "Atmospheric\u00a0Chemistry\u00a0&\u00a0Physics",
+    "summary": "Model simulations show\u00a0100\u20131000\u00d7 higher biological aerosols change ice numbers by\u00a0<\u00a06% and precipitation by\u00a0<\u00a04%, due to dominant secondary\u2011ice processes.",
+    "bottom": "Biological aerosols minimally affect cloud microphysics and precipitation (<\u00a06%).",
+    "image": "Fig_5.png",
+    "category": "Cloud\u00a0&\u00a0Aerosol\u00a0Distributions\u00a0&\u00a0Radiative\u00a0Effects"
+  },
+  {
+    "title": "Stratocumulus Clouds and Their Climate Impact",
+    "authors": "Gupta\u00a0et\u00a0al.,\u00a02017",
+    "journal": "Journal\u00a0of\u00a0Atmospheric\u00a0&\u00a0Solar\u2011Terrestrial\u00a0Physics",
+    "summary": "Multi\u2011year CloudSat &\u00a0CALIPSO analysis (2006\u20132010) over subtropical oceans shows nighttime thickening of marine stratocumulus (~960\u20131200\u00a0m) boosts long\u2011wave warming by\u00a010\u201320\u00a0W\u00a0m\u207b\u00b2.",
+    "bottom": "Night\u2011time thickening enhances stratocumulus warming effect (~10\u201320\u00a0W\u00a0m\u207b\u00b2).",
+    "image": "Figure_1.png",
+    "category": "Cloud\u00a0&\u00a0Aerosol\u00a0Distributions\u00a0&\u00a0Radiative\u00a0Effects"
+  }
+]

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width">
+  <base href="./"><title>Ashok Kumar Gupta, Ph.D.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header><nav class="container nav"><a href="index.html" class="active">Home</a><a href="research.html" class="">Research</a><a href="publications.html" class="">Publications</a><a href="mentoring.html" class="">Student Mentoring</a><a href="tools.html" class="">Tools</a><a href="scidata.html" class="">Scientific Data</a><a href="funding.html" class="">Funding Acknowledgement</a><button id="themeToggle" title="Toggle theme">🌓</button></nav></header>
+  <section class="hero">
+    <div class="hero-content">
+      <!-- your profile photo -->
+      <img src="figures/profile.jpg"
+         alt="Photo of Ashok Kumar Gupta, Ph.D."
+         class="profile-photo" />
+      <h1>Hi, I’m Ashok Kumar Gupta, Ph.D.</h1>
+      <div class="intro-frame">
+        <p style="margin:0;">Working as an Assistant Project Scientist II in the Department of Atmospheric and Oceanic Sciences at UCLA, where I lead efforts to reconstruct the 21<sup>st</sup>‑century global dust cycle using inverse modeling and multi‑sensor observations.</p>
+      </div>
+      <p>My research is driven by four pivotal questions: First, how do aerosol properties—from composition to size and concentration—govern cloud microphysics, modulating droplet and ice nucleation, albedo, and precipitation pathways (Gupta et al., 2018, 2020, 2021, 2023)? Second, how do land‑surface perturbations—explosive volcanic eruptions, wildfires, vegetation shifts, soil‑moisture changes, and winds—alter aerosol emissions, boundary‑layer convection, and Earth’s energy balance (Gupta et al., 2025)? Third, can AI‑driven tools revolutionize the detection and process‑based understanding of pyro‑cumulonimbus and volcanic clouds while precisely quantifying their radiative impacts on stratospheric composition and surface climate (Gupta et al., 2022, 2025)? And fourth, how has the 21<sup>st</sup>‑century global dust cycle evolved, what drives its variability, and what are its feedbacks on climate? To answer these, I integrate observations, modeling, machine learning, and inverse techniques—bringing the full suite of earth‑system tools to bear on aerosol–cloud–climate challenges.</p>
+      <a href="publications.html" class="cta">Explore My Work →</a>
+    </div>
+  </section>
+  <section class="container">
+    <h2>About Me</h2>
+    <h3>Assistant Project Scientist II, Aerosol–Climate Interactions Group</h3>
+    <p><strong>Department of Atmospheric & Oceanic Sciences, UCLA</strong></p>
+    <div>7127 Math Sciences Building</div><div>University of California, Los Angeles</div><div>Los Angeles, CA 90095</div><div>USA</div>
+    <div>Email: <a href="mailto:ashokgupta@atmos.ucla.edu ; ashok.gupta352@gmail.com">ashokgupta@atmos.ucla.edu ; ashok.gupta352@gmail.com</a></div>
+  </section>
+  <section class="container">
+    <h2>Research Areas</h2>
+    <ul class="research-list">
+  <li><strong>Aerosol–Cloud–Climate Interactions:</strong> Investigating how aerosols influence cloud microphysical properties, precipitation processes, and Earth’s radiative balance by integrating ground-based and satellite observations with radiative transfer modeling and high-resolution cloud resolving model (AC model) simulations.</li>
+      <li><strong>Land–Atmosphere Feedbacks and Aerosol Emissions:</strong> Examining how land‑use changes, surface winds, soil‑moisture variability, and wildfire‑driven smoke emissions interact to modulate dust aerosol loading—and how these combined aerosol forcings fuel extreme climate events such as regional heatwaves, severe air‑quality episodes, and progressive land degradation leading to desertification.</li>
+      <li><strong>Volcanic Impacts on Climate:</strong> Assessing how stratospheric injections of water vapor and sulfur dioxide, along with perturbations to stratospheric ozone from major volcanic eruptions, alter radiative forcing and drive surface temperature changes—with the goal of understanding their broader climatic implications.</li>
+    </ul>
+    </section>
+    <section class="featured container">
+      <h2>Latest Publication in News</h2>
+      <article class="card visible">
+       <h3>The January 2022 Hunga eruption cooled the Southern Hemisphere in 2022 and 2023</h3>
+       <p><i>Gupta et al., 2025</i> · <em>Nature Portfolio Journal: Communications Earth & Environment</em></p>
+       <p>Quantifying the climatic effects of the 2022 Hunga Tonga volcanic eruption, this research revealed a significant net radiative cooling effect (−0.55 ± 0.05 W m⁻² in 2022, −0.26 ± 0.04 W m⁻² in 2023) due to sulfate aerosols, causing a temperature drop of about −0.10 ± 0.02 K in the Southern Hemisphere. This unexpected cooling contradicts initial predictions of volcanic‑induced warming, underlining complex volcanic impacts on climate.</p>
+       <p class="bottom">Bottom line: Hunga eruption produced measurable cooling (~−0.10 K), challenging initial climate projections. From Gupta et al. (2025).</p>
+       <a href="publications.html">Read all publications →</a>
+       <a href="https://newsroom.ucla.edu/releases/hunga-volcano-eruption-cooled-southern-hemisphere">Read UCLA news →</a>
+     </article>
+  </section>
+  <footer class="container">© 2025 Ashok Kumar Gupta, Ph.D.</footer>
+  <button id="toTop" title="Back to top">↑</button>
+  <script>document.documentElement.style.scrollBehavior='smooth';</script>
+  <script>
+    const html = document.documentElement;
+    document.getElementById('themeToggle').onclick = () => html.classList.toggle('dark');
+    const btn = document.getElementById('toTop');
+    window.addEventListener('scroll', () => btn.style.display = window.scrollY > 300 ? 'block' : 'none');
+    btn.onclick = () => window.scrollTo({ top:0, behavior:'smooth' });
+  </script>
+  <script src="scroll-fade.js"></script>
+</body>
+</html>
