@@ -28,7 +28,7 @@ header, footer { background: var(--bg); padding: 1rem 0; }
  border: 2px solid var(--link);
 }
 .hero {
-  height: 65vh; background: url('hero-bg.jpg') center/cover no-repeat;
+  height: 80vh; background: url('hero-bg.jpg') center/cover no-repeat;
   display: flex; align-items: center; justify-content: center; position: relative; text-align: center;
 }
 .hero::before {
@@ -74,7 +74,7 @@ section { margin: 2rem 0; }
   .hero-content p   { font-size:1.05rem; text-align:left; hyphens:auto; }
 
   /* Profile photo shrinks a bit */
-  .profile-photo    { width:120px; height:120px; }
+  .profile-photo    { width:100px; height:100px; }
 
   /* Cards go edge-to-edge */
   .card             { margin-bottom:1rem; }
