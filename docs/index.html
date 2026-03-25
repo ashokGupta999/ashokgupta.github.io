@@ -1,64 +1,197 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="./"><title>Ashok Kumar Gupta, Ph.D.</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashok Kumar Gupta, Ph.D. — Staff Scientist, Vanderbilt University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#faf9f7;--fg:#1a1a1a;--accent:#2d5a27;--accent2:#8b6914;
+  --muted:#6b6b6b;--border:#e0ddd8;--card:#ffffff;
+  --glow:rgba(45,90,39,.08);--serif:'Instrument Serif',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(250,249,247,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.85rem 0}
+nav .inner{max-width:1120px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .brand{font-family:var(--serif);font-size:1.15rem;color:var(--fg);text-decoration:none;letter-spacing:-.02em}
+nav .links{display:flex;gap:1.6rem;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
+nav .links a:hover,nav .links a.active{color:var(--accent)}
+
+/* HERO */
+.hero{max-width:1120px;margin:0 auto;padding:5rem 2rem 4rem;display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
+.hero-text h1{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3.2rem);line-height:1.15;letter-spacing:-.03em;margin-bottom:.6rem}
+.hero-text h1 span{color:var(--accent);font-style:italic}
+.hero-text .subtitle{font-size:1rem;color:var(--accent2);font-weight:600;margin-bottom:1.4rem;letter-spacing:.01em}
+.hero-text .intro{font-size:1.02rem;color:var(--muted);max-width:620px;margin-bottom:2rem}
+.hero-text .intro strong{color:var(--fg);font-weight:600}
+.hero-links{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-links a{display:inline-flex;align-items:center;gap:.4rem;padding:.6rem 1.3rem;border-radius:6px;font-size:.85rem;font-weight:600;text-decoration:none;transition:all .25s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#1e4518}
+.btn-outline{border:1.5px solid var(--border);color:var(--fg)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;border-radius:14px;filter:grayscale(10%);box-shadow:0 20px 60px rgba(0,0,0,.08)}
+.hero-photo::after{content:'';position:absolute;inset:-8px;border:2px solid var(--accent);border-radius:18px;opacity:.15;pointer-events:none}
+
+/* CONTACT CARD */
+.contact-bar{max-width:1120px;margin:0 auto 3rem;padding:0 2rem}
+.contact-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.6rem 2rem;display:flex;flex-wrap:wrap;gap:2rem;align-items:center}
+.contact-card .item{display:flex;align-items:center;gap:.5rem;font-size:.88rem;color:var(--muted)}
+.contact-card .item strong{color:var(--fg);font-weight:600}
+.contact-card .item a{color:var(--accent);text-decoration:none}
+.contact-card .item a:hover{text-decoration:underline}
+
+/* SECTIONS */
+section{max-width:1120px;margin:0 auto;padding:3rem 2rem}
+section h2{font-family:var(--serif);font-size:1.8rem;letter-spacing:-.02em;margin-bottom:.3rem}
+section h2::after{content:'';display:block;width:40px;height:3px;background:var(--accent);border-radius:2px;margin-top:.5rem;margin-bottom:1.5rem}
+
+/* RESEARCH AREAS */
+.areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem;margin-top:.5rem}
+.area-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.6rem;transition:box-shadow .3s,border-color .3s}
+.area-card:hover{box-shadow:0 8px 30px var(--glow);border-color:var(--accent)}
+.area-card h3{font-family:var(--serif);font-size:1.15rem;margin-bottom:.5rem;color:var(--accent)}
+.area-card p{font-size:.9rem;color:var(--muted);line-height:1.65}
+
+/* LATEST PUBLICATIONS */
+.pub-highlight{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
+.pub-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.8rem;position:relative;overflow:hidden;transition:box-shadow .3s,border-color .3s}
+.pub-card:hover{box-shadow:0 8px 30px var(--glow);border-color:var(--accent)}
+.pub-card .badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.25rem .7rem;border-radius:4px;margin-bottom:.8rem}
+.badge-new{background:#2d5a27;color:#fff}
+.badge-featured{background:var(--accent2);color:#fff}
+.pub-card h3{font-family:var(--serif);font-size:1.1rem;line-height:1.35;margin-bottom:.5rem}
+.pub-card .journal{font-size:.82rem;color:var(--accent2);font-weight:600;margin-bottom:.6rem}
+.pub-card p{font-size:.88rem;color:var(--muted);line-height:1.6}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);margin-top:4rem;padding:2rem 0;text-align:center;font-size:.8rem;color:var(--muted)}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero{grid-template-columns:1fr;gap:2rem;padding:3rem 1.5rem 2rem}
+  .hero-photo{max-width:220px;margin:0 auto}
+  .hero-photo{order:-1}
+  nav .links{gap:1rem}
+  .contact-card{flex-direction:column;gap:1rem;align-items:flex-start}
+}
+
+/* FADE-IN ANIMATION */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+</style>
 </head>
 <body>
-  <header><nav class="container nav"><a href="index.html" class="active">Home</a><a href="research.html" class="">Research</a><a href="publications.html" class="">Publications</a><a href="mentoring.html" class="">Student Mentoring</a><a href="tools.html" class="">Tools</a><a href="scidata.html" class="">Scientific Data</a><a href="funding.html" class="">Funding Acknowledgement</a><button id="themeToggle" title="Toggle theme">🌓</button></nav></header>
-  <section class="hero">
-    <div class="hero-content">
-      <!-- your profile photo -->
-      <img src="figures/profile.jpg"
-         alt="Photo of Ashok Kumar Gupta, Ph.D."
-         class="profile-photo" />
-      <h1>Hi, I’m Ashok Kumar Gupta, Ph.D.</h1>
-      <div class="intro-frame">
-        <p style="margin:0;">Working as an Assistant Project Scientist II in the Department of Atmospheric and Oceanic Sciences at UCLA, where I lead efforts to reconstruct the 21<sup>st</sup>‑century global dust cycle using inverse modeling and multi‑sensor observations.</p>
-      </div>
-      <p>My research is driven by four pivotal questions: First, how do aerosol properties—from composition to size and concentration—govern cloud microphysics, modulating droplet and ice nucleation, albedo, and precipitation pathways (Gupta et al., 2018, 2020, 2021, 2023)? Second, how do land‑surface perturbations—explosive volcanic eruptions, wildfires, vegetation shifts, soil‑moisture changes, and winds—alter aerosol emissions, boundary‑layer convection, and Earth’s energy balance (Gupta et al., 2025)? Third, can AI‑driven tools revolutionize the detection and process‑based understanding of pyro‑cumulonimbus and volcanic clouds while precisely quantifying their radiative impacts on stratospheric composition and surface climate (Gupta et al., 2022, 2025)? And fourth, how has the 21<sup>st</sup>‑century global dust cycle evolved, what drives its variability, and what are its feedbacks on climate? To answer these, I integrate observations, modeling, machine learning, and inverse techniques—bringing the full suite of earth‑system tools to bear on aerosol–cloud–climate challenges.</p>
-      <a href="publications.html" class="cta">Explore My Work →</a>
+
+<nav>
+  <div class="inner">
+    <a href="index.html" class="brand">A. K. Gupta</a>
+    <div class="links">
+      <a href="index.html" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="mentoring.html">Mentoring</a>
+      <a href="tools.html">Tools</a>
+      <a href="scidata.html">Data</a>
+      <a href="funding.html">Funding</a>
     </div>
-  </section>
-  <section class="container">
-    <h2>About Me</h2>
-    <h3>Assistant Project Scientist II, Aerosol–Climate Interactions Group</h3>
-    <p><strong>Department of Atmospheric & Oceanic Sciences, UCLA</strong></p>
-    <div>7127 Math Sciences Building</div><div>University of California, Los Angeles</div><div>Los Angeles, CA 90095</div><div>USA</div>
-    <div>Email: <a href="mailto:ashokgupta@atmos.ucla.edu ; ashok.gupta352@gmail.com">ashokgupta@atmos.ucla.edu ; ashok.gupta352@gmail.com</a></div>
-  </section>
-  <section class="container">
-    <h2>Research Areas</h2>
-    <ul class="research-list">
-  <li><strong>Aerosol–Cloud–Climate Interactions:</strong> Investigating how aerosols influence cloud microphysical properties, precipitation processes, and Earth’s radiative balance by integrating ground-based and satellite observations with radiative transfer modeling and high-resolution cloud resolving model (AC model) simulations.</li>
-      <li><strong>Land–Atmosphere Feedbacks and Aerosol Emissions:</strong> Examining how land‑use changes, surface winds, soil‑moisture variability, and wildfire interact to modulate dust aerosol loading—and how these combined dust aerosol forcings fuel extreme climate events such as changes in precipitation pattern and hydrological cycle</li>
-      <li><strong>Volcanic Impacts on Climate:</strong> Assessing how stratospheric injections of water vapor and sulfur dioxide, along with perturbations to stratospheric ozone from major volcanic eruptions, alter radiative forcing and drive surface temperature changes—with the goal of understanding their broader climatic implications.</li>
-    </ul>
-    </section>
-    <section class="featured container">
-      <h2>Latest Publication in News</h2>
-      <article class="card visible">
-       <h3>The January 2022 Hunga eruption cooled the Southern Hemisphere in 2022 and 2023</h3>
-       <p><i>Gupta et al., 2025</i> · <em>Nature Portfolio Journal: Communications Earth & Environment</em></p>
-       <p>Quantifying the climatic effects of the 2022 Hunga Tonga volcanic eruption, this research revealed a significant net radiative cooling effect (−0.55 ± 0.05 W m⁻² in 2022, −0.26 ± 0.04 W m⁻² in 2023) due to sulfate aerosols, causing a temperature drop of about −0.10 ± 0.02 K in the Southern Hemisphere. This unexpected cooling contradicts initial predictions of volcanic‑induced warming, underlining complex volcanic impacts on climate.</p>
-       <p class="bottom">Bottom line: Hunga eruption produced measurable cooling (~−0.10 K), challenging initial climate projections. From Gupta et al. (2025).</p>
-       <a href="publications.html">Read all publications →</a>
-       <a href="https://newsroom.ucla.edu/releases/hunga-volcano-eruption-cooled-southern-hemisphere">Read UCLA news →</a>
-     </article>
-  </section>
-  <footer class="container">© 2025 Ashok Kumar Gupta, Ph.D.</footer>
-  <button id="toTop" title="Back to top">↑</button>
-  <script>document.documentElement.style.scrollBehavior='smooth';</script>
-  <script>
-    const html = document.documentElement;
-    document.getElementById('themeToggle').onclick = () => html.classList.toggle('dark');
-    const btn = document.getElementById('toTop');
-    window.addEventListener('scroll', () => btn.style.display = window.scrollY > 300 ? 'block' : 'none');
-    btn.onclick = () => window.scrollTo({ top:0, behavior:'smooth' });
-  </script>
-  <script src="scroll-fade.js"></script>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-text fade-up">
+    <h1>Ashok Kumar <span>Gupta</span></h1>
+    <div class="subtitle">Staff Scientist &middot; Vanderbilt University</div>
+    <p class="intro">
+      I work at the intersection of <strong>aerosols, clouds, climate, and machine learning</strong> in the Department of Earth &amp; Environmental Sciences at Vanderbilt University. My current efforts focus on deep-learning–enhanced satellite algorithms for ice-cloud retrievals supporting NASA's <strong>PolSIR</strong> mission, reconstructing the 21st-century global dust cycle through inverse modeling, and building physics-informed ML frameworks for real-time volcanic cloud detection from geostationary satellites.
+    </p>
+    <div class="hero-links">
+      <a href="publications.html" class="btn-primary">Publications &rarr;</a>
+      <a href="https://scholar.google.com/citations?user=PiFGqo4AAAAJ" target="_blank" class="btn-outline">Google Scholar</a>
+      <a href="mailto:ashok.k.gupta@vanderbilt.edu" class="btn-outline">Contact</a>
+    </div>
+  </div>
+  <div class="hero-photo fade-up">
+    <img src="figures/profile.jpg" alt="Ashok Kumar Gupta, Ph.D." loading="lazy">
+  </div>
+</div>
+
+<div class="contact-bar fade-up">
+  <div class="contact-card">
+    <div class="item"><strong>Position:</strong> Staff Scientist</div>
+    <div class="item"><strong>Dept:</strong> Earth &amp; Environmental Sciences</div>
+    <div class="item"><strong>Address:</strong> 5726 Stevenson Science Center, Nashville TN 37240</div>
+    <div class="item"><strong>Email:</strong> <a href="mailto:ashok.k.gupta@vanderbilt.edu">ashok.k.gupta@vanderbilt.edu</a></div>
+  </div>
+</div>
+
+<section class="fade-up">
+  <h2>Research Areas</h2>
+  <div class="areas">
+    <div class="area-card">
+      <h3>Aerosol–Cloud–Climate Interactions</h3>
+      <p>Investigating how aerosols govern cloud microphysics, precipitation pathways, and Earth's radiative balance by integrating satellite observations, radiative transfer modeling, and high-resolution cloud-resolving simulations.</p>
+    </div>
+    <div class="area-card">
+      <h3>Global Dust Cycle &amp; Land–Atmosphere Feedbacks</h3>
+      <p>Reconstructing the 21st-century dust cycle through multi-sensor observations and inverse modeling; examining how land-use change, soil moisture, and vegetation modulate dust emissions and climate feedbacks.</p>
+    </div>
+    <div class="area-card">
+      <h3>Volcanic Impacts on Climate</h3>
+      <p>Quantifying how stratospheric injections of water vapor and SO₂ from explosive eruptions perturb radiative forcing and surface temperatures, including the landmark Hunga Tonga 2022 eruption studies.</p>
+    </div>
+    <div class="area-card">
+      <h3>Deep Learning for Satellite Retrievals</h3>
+      <p>Developing deep-learning–enhanced algorithms for ice-cloud microphysical retrievals (NASA PolSIR) and physics-informed, scene-adaptive ML for near-real-time volcanic umbrella cloud detection from geostationary imagery.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fade-up">
+  <h2>Latest Publications</h2>
+  <div class="pub-highlight">
+    <div class="pub-card">
+      <span class="badge badge-new">New — 2026</span>
+      <h3>A global decline in atmospheric dust during the 21st century</h3>
+      <div class="journal">Accepted in Science Advances (2026)</div>
+      <p>Gupta, A. K., J. F. Kok, V. Amiridis, A. Gkikas, K. Rizos, E. Proestakis, S. Logothetis, E. Marinou &amp; C. Pérez García-Pando. Using large-ensemble inverse modeling, we show a global DAOD decline of −10 ± 8 % during 2003–2023, providing the strongest evidence to date that Earth has become less dusty.</p>
+    </div>
+    <div class="pub-card">
+      <span class="badge badge-new">New — 2026</span>
+      <h3>Desert dust exerts a substantial longwave radiative forcing missing from climate models</h3>
+      <div class="journal">Accepted in Nature Communications (2026)</div>
+      <p>Kok, J. F., A. K. Gupta, A. T. Evan, A. A. Adebiyi, S. Albani, Y. Balkanski et al. We constrain the present-day dust longwave DRE to +0.25 ± 0.06 W m⁻²—nearly double the median of current climate models.</p>
+    </div>
+    <div class="pub-card">
+      <span class="badge badge-featured">Featured — 2025</span>
+      <h3>The January 2022 Hunga eruption cooled the Southern Hemisphere in 2022 and 2023</h3>
+      <div class="journal">Communications Earth &amp; Environment (2025)</div>
+      <p>Gupta, A. K., T. Mittal, K. Fauria, R. Bennartz &amp; J. Kok. Net radiative cooling of −0.55 ± 0.05 W m⁻² in 2022 from sulfate aerosols, driving a −0.10 K Southern Hemisphere temperature anomaly—contradicting initial warming projections.</p>
+    </div>
+  </div>
+  <p style="margin-top:1.5rem;text-align:center">
+    <a href="publications.html" class="btn-primary" style="display:inline-flex">View all publications &rarr;</a>
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Ashok Kumar Gupta, Ph.D. &middot; Vanderbilt University</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') });
+}, {threshold: 0.12});
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>

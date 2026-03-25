@@ -1,75 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Ashok Kumar Gupta, Ph.D.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#faf9f7;--fg:#1a1a1a;--accent:#2d5a27;--accent2:#8b6914;--muted:#6b6b6b;--border:#e0ddd8;--card:#ffffff;--glow:rgba(45,90,39,.08);--serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
+html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;-webkit-font-smoothing:antialiased}
+nav{position:sticky;top:0;z-index:100;background:rgba(250,249,247,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.85rem 0}
+nav .inner{max-width:1120px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .brand{font-family:var(--serif);font-size:1.15rem;color:var(--fg);text-decoration:none;letter-spacing:-.02em}
+nav .links{display:flex;gap:1.6rem;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
+nav .links a:hover,nav .links a.active{color:var(--accent)}
+.content{max-width:860px;margin:0 auto;padding:3rem 2rem 4rem}
+h1.page-title{font-family:var(--serif);font-size:2.4rem;letter-spacing:-.03em;margin-bottom:.2rem}
+h1.page-title::after{content:'';display:block;width:50px;height:3px;background:var(--accent);border-radius:2px;margin-top:.5rem;margin-bottom:2rem}
+h2{font-family:var(--serif);font-size:1.5rem;letter-spacing:-.02em;margin:2.5rem 0 .8rem;color:var(--accent)}
+h3{font-family:var(--serif);font-size:1.15rem;margin:1.5rem 0 .4rem}
+p{margin-bottom:1rem;font-size:.95rem;color:var(--muted)}
+p strong{color:var(--fg)}
+a{color:var(--accent)}
+.research-num{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.5rem;padding:1.4rem;background:var(--card);border:1px solid var(--border);border-radius:10px;transition:box-shadow .3s}
+.research-num:hover{box-shadow:0 6px 24px var(--glow)}
+.research-num .num{font-family:var(--serif);font-size:2rem;color:var(--accent);line-height:1;min-width:36px;padding-top:.15rem}
+.research-num .text h3{margin:0 0 .3rem;font-size:1.05rem}
+.research-num .text p{margin:0;font-size:.9rem}
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8"><meta name="viewport" content="width=device-width">
-      <base href="./"><title>Research</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <header><nav class="container nav"><a href="index.html" class="">Home</a><a href="research.html" class="active">Research</a><a href="publications.html" class="">Publications</a><a href="mentoring.html" class="">Student Mentoring</a><a href="tools.html" class="">Tools</a><a href="scidata.html" class="">Scientific Data</a><a href="funding.html" class="">Funding Acknowledgement</a><button id="themeToggle" title="Toggle theme">🌓</button></nav></header>
-      <section class="container research-frame">
-        <h2>Research Interests</h2>
-        <p>My research sits at the intersection of aerosols, clouds, climate, and land‑surface processes.</p>
+.news-list{list-style:none;padding:0;margin-top:1rem}
+.news-list li{margin-bottom:.6rem;padding-left:1.2rem;position:relative;font-size:.88rem}
+.news-list li::before{content:'→';position:absolute;left:0;color:var(--accent);font-weight:700}
+.news-list li a{color:var(--accent);text-decoration:none}
+.news-list li a:hover{text-decoration:underline}
 
-      <div class="research-frame-item">
-        <span class="highlight-label">1. Convection and mixed‑phase cloud processes:</span>
-        <p>Focusing on secondary ice production, I investigate how aerosols modulate mixed‑phase and deep convective clouds—altering precipitation efficiency and storm dynamics—and probe which microphysical pathways dominate ice amplification in midlatitude convective anvils (Waman et al., 2022; Gupta et al., 2023).</p>
-      </div>
+footer{border-top:1px solid var(--border);margin-top:4rem;padding:2rem 0;text-align:center;font-size:.8rem;color:var(--muted)}
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){nav .links{gap:1rem}}
+</style>
+</head>
+<body>
 
-      <div class="research-frame-item">
-        <span class="highlight-label">2. Land–Atmosphere Feedbacks and Aerosol Emissions:</span>
-        <p>I examine how land‑use change, surface‑wind variability, soil‑moisture anomalies, and wildfire  combine to control dust aerosol loading and assess how these coupled forcings drive extremes, from regional heatwaves and severe air‑quality crises to progressive land degradation and desertification.</p>
-      </div>
+<nav>
+  <div class="inner">
+    <a href="index.html" class="brand">A. K. Gupta</a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="mentoring.html">Mentoring</a>
+      <a href="tools.html">Tools</a>
+      <a href="scidata.html">Data</a>
+      <a href="funding.html">Funding</a>
+    </div>
+  </div>
+</nav>
 
-      <div class="research-frame-item">
-        <span class="highlight-label">3. Remote sensing retrievals of aerosol and cloud properties:</span>
-        <p>I develop and apply satellite‑ and ground‑based algorithms to constrain key aerosol metrics (AOD, size distribution, asymmetry parameters, single‑scattering albedo) and cloud properties (liquid & ice water paths, droplet effective radius). These retrievals are essential for narrowing uncertainties in Earth’s radiation budget and validating climate models.</p>
-      </div>
+<div class="content">
 
-      <div class="research-frame-item">
-        <span class="highlight-label">4. Volcanic influences on stratospheric composition and radiation:</span>
-        <p>Through detailed case studies—most recently the 2022 Hunga eruption—I quantify how volcanic injections of water vapor and SO₂ perturb stratospheric chemistry and radiative forcing, and evaluate their impacts on global surface temperatures (Gupta et al., 2022, 2025).</p>
-      </div>
+<h1 class="page-title fade-up">Research</h1>
 
-      <div class="research-frame-item">
-        <span class="highlight-label">5. Real‑Time automated detection of volcanic umbrella clouds from Geostationary observations:</span>
-        <p>Using machine learning (e.g., a patch‑wise ConvLSTM auto‑encoder), I retrieve volcanic umbrella‑cloud tops at sub‑kilometre resolution from a single high‑resolution visible or IR frame, cutting latency from hours to seconds while keeping thermal errors below 2 K. When paired with a physically based cold‑anomaly mask, the system tracked 98 % of umbrella‑top evolution during the April 2024 Ruang eruption, demonstrating its clear value for rapid ash‑hazard warnings and first‑order radiative‑forcing estimates.</p>
-      </div>
+<p class="fade-up" style="font-size:1.05rem;color:var(--fg);max-width:720px">My research sits at the intersection of aerosols, clouds, climate, and land-surface processes — using observations, modeling, machine learning, and inverse techniques to address aerosol–cloud–climate challenges.</p>
 
-      </section>
-      <section class="container research-frame">
-        <h2>Current Research</h2>
-        <p>I’m currently reconstructing the 21st‑century global dust cycle by combining ground‑based and satellite observations, reanalysis data, and inverse modeling techniques (Gupta et al., in prep), aiming to quantify dust variability and its radiative impact across major source regions. This work provides critical constraints on dust–climate feedbacks in Earth system models. I am also investigating how land‑use changes, vegetation dynamics, and soil moisture influence dust aerosol emissions and associated shifts in Earth’s energy balance. <br><br>I employ lightweight deep-learning pipelines to transform raw satellite radiances into science-grade products: a patch-wise ConvLSTM autoencoder retrieves volcanic umbrella-cloud top heights at sub-kilometre resolution from high-resolution visible and infrared imagery—reducing processing latency from minutes to seconds while maintaining thermal errors below 2 K—and, when coupled with a physically grounded cold-anomaly mask, captured 98 % of the umbrella-cloud top evolution during the 29 April 2024 Ruang eruption, demonstrating clear utility for rapid ash-hazard warnings.</p>
-      </section>
-      <section class="container research-frame">
-        <h2>News Coverage</h2>
-        <p>Our recent study, which revealed unexpected Southern Hemisphere cooling following the 2022 Hunga Tonga eruption, was featured in major scientific outlets such as UCLA News. These findings challenge the conventional view of post‑eruption warming and underscore the critical role of sulfate aerosol radiative effects.</p>
-<p>Another study on Hunga eruption used satellite remote sensing to characterize the umbrella clouds generated by the 19 December 2021, 13 January 2022, and 15 January 2022 eruptions of Hunga Tonga–Hunga Ha’apai. We identified two distinct cloud layers on 15 January (upper at 31 ± 3 km, lower at 17 ± 2 km), measured a peak volumetric flow rate of ~5.0 × 10¹¹ m³ s⁻¹—nearly two orders of magnitude higher than earlier events—and confirmed that all umbrella clouds were ice‑rich.</p>
-<p>Read more coverage on:</p>
-<ul>
+<h2 class="fade-up">Research Interests</h2>
+
+<div class="fade-up">
+
+<div class="research-num">
+  <div class="num">1</div>
+  <div class="text">
+    <h3>Convection &amp; Mixed-Phase Cloud Processes</h3>
+    <p>Investigating how aerosols modulate mixed-phase and deep convective clouds — altering precipitation efficiency and storm dynamics — and probing which microphysical pathways dominate ice amplification in midlatitude convective anvils (Waman et al., 2022; Gupta et al., 2023).</p>
+  </div>
+</div>
+
+<div class="research-num">
+  <div class="num">2</div>
+  <div class="text">
+    <h3>Land–Atmosphere Feedbacks &amp; Aerosol Emissions</h3>
+    <p>Examining how land-use change, surface-wind variability, soil-moisture anomalies, and wildfire combine to control dust aerosol loading; assessing how these coupled forcings drive extremes from regional heatwaves to progressive land degradation.</p>
+  </div>
+</div>
+
+<div class="research-num">
+  <div class="num">3</div>
+  <div class="text">
+    <h3>Remote Sensing Retrievals of Aerosol &amp; Cloud Properties</h3>
+    <p>Developing satellite- and ground-based algorithms to constrain key aerosol metrics (AOD, size distribution, single-scattering albedo) and cloud properties (liquid &amp; ice water paths, effective radius) — essential for narrowing uncertainties in Earth's radiation budget.</p>
+  </div>
+</div>
+
+<div class="research-num">
+  <div class="num">4</div>
+  <div class="text">
+    <h3>Volcanic Influences on Stratospheric Composition &amp; Radiation</h3>
+    <p>Through detailed case studies — most recently the 2022 Hunga eruption — quantifying how volcanic injections of water vapor and SO₂ perturb stratospheric chemistry and radiative forcing, and evaluating their impacts on global surface temperatures (Gupta et al., 2022, 2025).</p>
+  </div>
+</div>
+
+<div class="research-num">
+  <div class="num">5</div>
+  <div class="text">
+    <h3>Real-Time Automated Detection of Volcanic Umbrella Clouds</h3>
+    <p>Using machine learning (patch-wise ConvLSTM auto-encoder), retrieving volcanic umbrella-cloud tops at sub-km resolution from a single visible/IR frame, cutting latency from hours to seconds. The system tracked 98% of umbrella-top evolution during the April 2024 Ruang eruption (Gupta &amp; Bennartz, manuscript ready).</p>
+  </div>
+</div>
+
+</div>
+
+<h2 class="fade-up">Current Research</h2>
+
+<div class="fade-up">
+<p><strong>As Staff Scientist at Vanderbilt University</strong>, I am developing deep-learning–enhanced satellite algorithms for retrieving ice-cloud microphysical properties in support of NASA's PolSIR (Polarized Submillimeter Ice-cloud Radiometer) mission, delivering global, all-weather measurements of ice clouds to constrain their impact on Earth's radiation budget.</p>
+
+<p>I have reconstructed the 21st-century global dust cycle by combining ground-based and satellite observations, three aerosol reanalyses, and a large-ensemble inverse modeling framework. We show that global dust aerosol optical depth declined by −10 ± 8 % between 2003 and 2023 — the strongest evidence to date that the planet has become less dusty in the early 21st century. This work is now <strong>accepted in Science Advances (2026)</strong>.</p>
+
+<p>In parallel, I contributed to an observationally constrained framework quantifying the longwave direct radiative forcing of desert dust. We constrain the present-day clear-sky dust longwave DRE to +0.25 ± 0.06 W m⁻² — nearly double current climate model estimates. This work is now <strong>accepted in Nature Communications (2026)</strong>.</p>
+
+<p>I also continue developing a physics-informed, scene-adaptive machine-learning model that detects volcanic umbrella clouds in near-real time using Himawari-8/9 imagery, and I am investigating with deep-learning–based PCA the drivers of the 21st-century decline in dust aerosols.</p>
+</div>
+
+<h2 class="fade-up">News Coverage</h2>
+
+<div class="fade-up">
+<p>Our work on the Hunga Tonga eruption and its unexpected cooling effect has been widely covered:</p>
+
+<ul class="news-list">
+  <li><a href="https://phys.org/news/2025-04-hunga-volcano-eruption-unexpected-southern.html" target="_blank">Phys.org — Unexpected Southern Cooling (Apr 2025)</a></li>
+  <li><a href="https://newsroom.ucla.edu/releases/hunga-volcano-eruption-cooled-southern-hemisphere" target="_blank">UCLA Newsroom</a></li>
   <li><a href="https://en.wikipedia.org/?curid=69781683" target="_blank">Wikipedia overview</a></li>
   <li><a href="https://nature.altmetric.com/details/175673120/news" target="_blank">Altmetric news dashboard</a></li>
-  <li><a href="https://phys.org/news/2023-01-tonga-volcanic-eruption-foundational-knowledge.html" target="_blank">Phys.org – Foundational Knowledge of Tonga Eruption</a></li>
+  <li><a href="https://phys.org/news/2023-01-tonga-volcanic-eruption-foundational-knowledge.html" target="_blank">Phys.org — Foundational Knowledge of Tonga Eruption</a></li>
   <li><a href="https://cosmosmagazine.com/news/implications-of-hunga-tonga-eruption/" target="_blank">Cosmos Magazine</a></li>
-  <li><a href="https://phys.org/news/2025-04-hunga-volcano-eruption-unexpected-southern.html" target="_blank">Phys.org – Unexpected Southern Cooling (Apr 2025)</a></li>
-  <li><a href="https://astrobiology.com/2025/04/hunga-volcano-eruption-cooled-rather-than-warmed-earths-southern-hemisphere.html" target="_blank">Astrobiology.com</a></li>
-  <li><a href="https://www.preventionweb.net/news/hunga-volcano-eruption-cooled-rather-warmed-southern-hemisphere" target="_blank">PreventionWeb</a></li>
   <li><a href="https://www.technologynetworks.com/tn/news/hunga-volcanos-2022-eruption-cooled-the-southern-hemisphere-398073" target="_blank">Technology Networks</a></li>
-  <li><a href="https://bioengineer.org/hunga-volcano-eruption-cools-instead-of-heats-southern-hemisphere/" target="_blank">Bioengineer.org</a></li>
-  <li><a href="https://scienmag.com/hunga-volcano-eruption-cools-instead-of-heats-southern-hemisphere/" target="_blank">Scienmag</a></li>
   <li><a href="https://www.eurekalert.org/news-releases/1079225" target="_blank">EurekAlert!</a></li>
-  <li><a href="https://www.miragenews.com/hunga-volcano-eruption-cooled-rather-than-1437688/" target="_blank">Mirage News</a></li>
-  <li><a href="https://www.meteored.com.py/noticias/actualidad/erupcion-volcan-hunga-tonga-enfrio-hemisferio-sur.html" target="_blank">Meteored Paraguay</a></li>
-  <li><a href="https://www.futura-sciences.com/planete/actualites/volcan-geoingenierie-ce-revele-eruption-hunga-tonga-fait-froid-dos-120940/#xtor%3DRSS-8" target="_blank">Futura‑Sciences</a></li>
-  <li><a href="https://www.unian.ua/science/globalne-poteplinnya-spovilnilosya-cherez-viverzhennya-vulkana-u-2022-roci-12967731.html" target="_blank">UNIAN</a></li>
-  <li><a href="https://geekweek.interia.pl/nauka/news-wybuch-wulkanu-hunga-tonga-doprowadzil-do-wielu-nieoczekiwan,nId,21392239" target="_blank">GeekWeek Interia</a></li>
-  <li><a href="https://noticiasdelatierra.com/el-inesperado-efecto-de-enfriamiento-de-la-erupcion-del-volcan-hunga-en-el-hemisferio-sur-desafia-los-supuestos-de-la-geoingenieria/" target="_blank">Noticias de la Tierra</a></li>
+  <li><a href="https://www.preventionweb.net/news/hunga-volcano-eruption-cooled-rather-warmed-southern-hemisphere" target="_blank">PreventionWeb</a></li>
+  <li><a href="https://bioengineer.org/hunga-volcano-eruption-cools-instead-of-heats-southern-hemisphere/" target="_blank">Bioengineer.org</a></li>
 </ul>
+</div>
 
-      </section>
-      <footer class="container">© 2025 Ashok Kumar Gupta, Ph.D.</footer>
-      <button id="toTop" title="Back to top">↑</button>
-      <script src="scroll-fade.js"></script>
-    </body>
-    </html>
+</div>
+
+<footer>
+  <p>&copy; 2026 Ashok Kumar Gupta, Ph.D. &middot; Vanderbilt University</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') });
+}, {threshold: 0.1});
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
