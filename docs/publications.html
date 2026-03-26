@@ -37,7 +37,8 @@ ol.pubs li a{color:var(--blue);font-weight:500}
 .feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:.8rem}
 .feat{border:1px solid var(--border);border-radius:6px;overflow:hidden;transition:box-shadow .3s}
 .feat:hover{box-shadow:0 4px 16px rgba(0,0,0,.06)}
-.feat img{width:100%;height:auto;max-height:320px;object-fit:contain;background:var(--bg);border-bottom:1px solid var(--border);padding:8px}
+.feat .img-wrap{width:100%;height:240px;background:var(--bg);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:10px}
+.feat .img-wrap img{max-width:100%;max-height:100%;object-fit:contain}
 .feat .body{padding:1.1rem}
 .feat h3{font-family:var(--serif);font-size:.98rem;font-weight:600;margin-bottom:.2rem;line-height:1.35}
 .feat .meta{font-size:.84rem;color:var(--blue);font-weight:500;margin-bottom:.4rem}
@@ -81,10 +82,10 @@ ol.pubs li a{color:var(--blue);font-weight:500}
 
 <h2 class="fade">Featured Publications</h2>
 <div class="feat-grid fade">
-<div class="feat"><img src="figures/Fig_1.png" alt="Hunga cooling"><div class="body"><h3>Hunga eruption cooled the Southern Hemisphere</h3><div class="meta">Gupta et al., 2025 · Comms Earth &amp; Env</div><p>Net cooling of −0.55 W m⁻² from sulfate aerosols drove a −0.10 K SH temperature anomaly — contradicting warming projections.</p><p class="bl">Measurable volcanic cooling challenges climate projections.</p></div></div>
-<div class="feat"><img src="figures/z.png" alt="ConvLSTM"><div class="body"><h3>ML-based volcanic umbrella cloud detection</h3><div class="meta">Gupta &amp; Bennartz · Manuscript ready</div><p>ConvLSTM auto-encoder detects umbrella-cloud tops at sub-km resolution, thermal errors below 2 K, 98% of 2024 Ruang plume captured.</p><p class="bl">Automated ML for rapid ash-hazard alerts.</p></div></div>
-<div class="feat"><img src="figures/Fig_2.png" alt="Warm vs cold rain"><div class="body"><h3>Warm vs. cold rain in continental storms</h3><div class="meta">Gupta et al., 2023 · Comms Earth &amp; Env</div><p>Warm-rain processes account for ~80% of surface precipitation in very warm-based clouds.</p><p class="bl">Cloud-base warming shifts precipitation to warm-rain.</p></div></div>
-<div class="feat"><img src="figures/Fig_3.png" alt="Hunga chronology"><div class="body"><h3>Volcanic umbrella clouds: Hunga Tonga</h3><div class="meta">Gupta et al., 2022 · Comms Earth &amp; Env</div><p>Unprecedented umbrella heights (~31 km), two ice-rich layers, volumetric flow of ~5.0 × 10¹¹ m³ s⁻¹.</p><p class="bl">Record-high volcanic clouds redefine eruption science.</p></div></div>
+<div class="feat"><div class="img-wrap"><img src="figures/Fig_1.png" alt="Hunga cooling"></div><div class="body"><h3>Hunga eruption cooled the Southern Hemisphere</h3><div class="meta">Gupta et al., 2025 · Comms Earth &amp; Env</div><p>Net cooling of −0.55 W m⁻² from sulfate aerosols drove a −0.10 K SH temperature anomaly — contradicting warming projections.</p><p class="bl">Measurable volcanic cooling challenges climate projections.</p></div></div>
+<div class="feat"><div class="img-wrap"><img src="figures/z.png" alt="ConvLSTM"></div><div class="body"><h3>ML-based volcanic umbrella cloud detection</h3><div class="meta">Gupta &amp; Bennartz · Manuscript ready</div><p>ConvLSTM auto-encoder detects umbrella-cloud tops at sub-km resolution, thermal errors below 2 K, 98% of 2024 Ruang plume captured.</p><p class="bl">Automated ML for rapid ash-hazard alerts.</p></div></div>
+<div class="feat"><div class="img-wrap"><img src="figures/Fig_2.png" alt="Warm vs cold rain"></div><div class="body"><h3>Warm vs. cold rain in continental storms</h3><div class="meta">Gupta et al., 2023 · Comms Earth &amp; Env</div><p>Warm-rain processes account for ~80% of surface precipitation in very warm-based clouds.</p><p class="bl">Cloud-base warming shifts precipitation to warm-rain.</p></div></div>
+<div class="feat"><div class="img-wrap"><img src="figures/Fig_3.png" alt="Hunga chronology"></div><div class="body"><h3>Volcanic umbrella clouds: Hunga Tonga</h3><div class="meta">Gupta et al., 2022 · Comms Earth &amp; Env</div><p>Unprecedented umbrella heights (~31 km), two ice-rich layers, volumetric flow of ~5.0 × 10¹¹ m³ s⁻¹.</p><p class="bl">Record-high volcanic clouds redefine eruption science.</p></div></div>
 </div>
 </div>
 <footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
