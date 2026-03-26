@@ -6,14 +6,31 @@
 <title>Student Mentoring — Ashok Kumar Gupta, Ph.D.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 <style>
-.student{padding:1.2rem 0;border-bottom:1px solid var(--border)}
-.student:last-child{border-bottom:none}
-.student h3{font-size:1.05rem;margin-bottom:.1rem}
-.student .role{font-size:.9rem;color:var(--blue);font-weight:500;margin-bottom:.35rem}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--white:#ffffff;--bg:#f8f9fb;--fg:#1d1d1f;--fg2:#4a4a4f;--fg3:#8e8e93;--blue:#1a5276;--blue-light:#eaf2f8;--border:#e5e7eb;--serif:'Source Serif 4',Georgia,serif;--sans:'Source Sans 3','Segoe UI',sans-serif;--max:1080px}
+html{scroll-behavior:smooth;font-size:17px}
+body{font-family:var(--sans);background:var(--white);color:var(--fg);line-height:1.75;-webkit-font-smoothing:antialiased}
+nav{border-bottom:1px solid var(--border);background:var(--white);position:sticky;top:0;z-index:100}
+nav .inner{max-width:var(--max);margin:0 auto;padding:.85rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .brand{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--blue);text-decoration:none}
+nav .links{display:flex;gap:1.8rem;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--fg3);font-size:.88rem;font-weight:500;transition:color .2s}
+nav .links a:hover,nav .links a.active{color:var(--blue)}
+.content{max-width:920px;margin:0 auto;padding:2.5rem 2rem 4rem}
+h1.page-title{font-family:var(--serif);font-size:2rem;font-weight:600;margin-bottom:.15rem}
+.page-sub{font-size:.95rem;color:var(--fg3);margin-bottom:2.2rem}
+h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--fg);margin:2.8rem 0 1rem;padding-bottom:.45rem;border-bottom:2px solid var(--blue);display:inline-block}
+p{margin-bottom:1rem;font-size:1rem;color:var(--fg2);font-weight:300;line-height:1.8}
+p strong{color:var(--fg);font-weight:500}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;font-size:.85rem;color:var(--fg3)}
+.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.fade.show{opacity:1;transform:translateY(0)}
+.student{padding:1.2rem 0;border-bottom:1px solid var(--border)}.student:last-child{border-bottom:none}
+.student h3{font-family:var(--serif);font-size:1.08rem;font-weight:600;color:var(--fg);margin-bottom:.1rem}
+.student .role{font-size:.92rem;color:var(--blue);font-weight:500;margin-bottom:.35rem}
 .student p{margin:0;font-size:.97rem}
-.student a{color:var(--blue)}
+@media(max-width:700px){nav .links{gap:1rem}.content{padding:2rem 1.5rem 3rem}}
 </style>
 </head>
 <body>

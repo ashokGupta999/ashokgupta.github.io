@@ -6,12 +6,31 @@
 <title>Funding — Ashok Kumar Gupta, Ph.D.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 <style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--white:#ffffff;--bg:#f8f9fb;--fg:#1d1d1f;--fg2:#4a4a4f;--fg3:#8e8e93;--blue:#1a5276;--border:#e5e7eb;--serif:'Source Serif 4',Georgia,serif;--sans:'Source Sans 3','Segoe UI',sans-serif;--max:1080px}
+html{scroll-behavior:smooth;font-size:17px}
+body{font-family:var(--sans);background:var(--white);color:var(--fg);line-height:1.75;-webkit-font-smoothing:antialiased}
+nav{border-bottom:1px solid var(--border);background:var(--white);position:sticky;top:0;z-index:100}
+nav .inner{max-width:var(--max);margin:0 auto;padding:.85rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .brand{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--blue);text-decoration:none}
+nav .links{display:flex;gap:1.8rem;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--fg3);font-size:.88rem;font-weight:500;transition:color .2s}
+nav .links a:hover,nav .links a.active{color:var(--blue)}
+.content{max-width:920px;margin:0 auto;padding:2.5rem 2rem 4rem}
+h1.page-title{font-family:var(--serif);font-size:2rem;font-weight:600;margin-bottom:.15rem}
+.page-sub{font-size:.95rem;color:var(--fg3);margin-bottom:2.2rem}
+h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--fg);margin:2.8rem 0 1rem;padding-bottom:.45rem;border-bottom:2px solid var(--blue);display:inline-block}
+h3{font-family:var(--serif);font-size:1.08rem;font-weight:600;color:var(--fg);margin-bottom:.3rem}
+p{margin-bottom:1rem;font-size:1rem;color:var(--fg2);font-weight:300;line-height:1.8}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;font-size:.85rem;color:var(--fg3)}
+.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.fade.show{opacity:1;transform:translateY(0)}
 .fund-item{padding:1.1rem 0;border-bottom:1px solid var(--border)}.fund-item:last-child{border-bottom:none}
 .fund-item h3{font-size:1.05rem;margin-bottom:.25rem}
-.fund-item .agency{font-size:.92rem;color:var(--blue);font-weight:500;margin-bottom:.3rem}
+.fund-item .agency{font-size:.95rem;color:var(--blue);font-weight:500;margin-bottom:.3rem}
 .fund-item p{margin:0;font-size:.97rem}
+@media(max-width:700px){nav .links{gap:1rem}.content{padding:2rem 1.5rem 3rem}}
 </style>
 </head>
 <body>
@@ -19,7 +38,7 @@
 
 <div class="content">
 <h1 class="page-title fade">Funding Acknowledgement</h1>
-<p class="page-sub fade">Competitive research proposals submitted and funding support for ongoing and past work.</p>
+<p class="page-sub fade">Competitive research proposals and funding support for ongoing work.</p>
 
 <h2 class="fade">Competitive Research Proposals (2025–2026, as PI)</h2>
 
@@ -33,45 +52,6 @@
   <h3>Quantifying Polar Longwave Effective Cloud Radiative Forcing Constrained by PREFIRE Observations</h3>
   <div class="agency">NASA ROSES–2025 (PREFIRE Science Applications Team)</div>
   <p>PI-led proposal to leverage PREFIRE spectral radiances for spectrally resolved longwave cloud radiative diagnostics across the polar regions. Step 1 submitted.</p>
-</div>
-
-<h2 class="fade">Awards &amp; Fellowships</h2>
-
-<div class="fund-item fade">
-  <h3>Postdoctoral Fellowship</h3>
-  <div class="agency">Vanderbilt University, Nashville, TN (Nov 2019)</div>
-</div>
-<div class="fund-item fade">
-  <h3>Postdoctoral Fellowship</h3>
-  <div class="agency">Lund University, Sweden (Jun 2019)</div>
-</div>
-<div class="fund-item fade">
-  <h3>SOLAS Grant — 2018 SOLAS Summer School</h3>
-  <div class="agency">Cargese, Corsica, France (Jul 2018)</div>
-</div>
-<div class="fund-item fade">
-  <h3>Postdoctoral Fellowship</h3>
-  <div class="agency">ISRO, Thiruvananthapuram, India (Jun 2018)</div>
-</div>
-<div class="fund-item fade">
-  <h3>Senior Research Fellowship</h3>
-  <div class="agency">ISRO, Thiruvananthapuram, India (Dec 2013)</div>
-</div>
-<div class="fund-item fade">
-  <h3>Junior Research Fellowship</h3>
-  <div class="agency">ISRO, Thiruvananthapuram, India (Dec 2011)</div>
-</div>
-<div class="fund-item fade">
-  <h3>Graduate Aptitude Test in Engineering (GATE) Qualified</h3>
-  <div class="agency">Indian Institute of Technology (IIT), India (Feb 2014)</div>
-</div>
-<div class="fund-item fade">
-  <h3>J. N. Tata Endowment Scholarship for Higher Education</h3>
-  <div class="agency">Mumbai, India (May 2011)</div>
-</div>
-<div class="fund-item fade">
-  <h3>M.Sc. College Topper Award</h3>
-  <div class="agency">Ramjas College, University of Delhi, India (Jun 2009)</div>
 </div>
 
 </div>

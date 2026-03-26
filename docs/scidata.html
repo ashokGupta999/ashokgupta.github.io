@@ -6,11 +6,31 @@
 <title>Scientific Data — Ashok Kumar Gupta, Ph.D.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 <style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--white:#ffffff;--bg:#f8f9fb;--fg:#1d1d1f;--fg2:#4a4a4f;--fg3:#8e8e93;--blue:#1a5276;--border:#e5e7eb;--serif:'Source Serif 4',Georgia,serif;--sans:'Source Sans 3','Segoe UI',sans-serif;--max:1080px}
+html{scroll-behavior:smooth;font-size:17px}
+body{font-family:var(--sans);background:var(--white);color:var(--fg);line-height:1.75;-webkit-font-smoothing:antialiased}
+nav{border-bottom:1px solid var(--border);background:var(--white);position:sticky;top:0;z-index:100}
+nav .inner{max-width:var(--max);margin:0 auto;padding:.85rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .brand{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--blue);text-decoration:none}
+nav .links{display:flex;gap:1.8rem;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--fg3);font-size:.88rem;font-weight:500;transition:color .2s}
+nav .links a:hover,nav .links a.active{color:var(--blue)}
+.content{max-width:920px;margin:0 auto;padding:2.5rem 2rem 4rem}
+h1.page-title{font-family:var(--serif);font-size:2rem;font-weight:600;margin-bottom:.15rem}
+.page-sub{font-size:.95rem;color:var(--fg3);margin-bottom:2.2rem}
+h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--fg);margin:2.8rem 0 1rem;padding-bottom:.45rem;border-bottom:2px solid var(--blue);display:inline-block}
+h3{font-family:var(--serif);font-size:1.08rem;font-weight:600;color:var(--fg);margin-bottom:.3rem}
+p{margin-bottom:1rem;font-size:1rem;color:var(--fg2);font-weight:300;line-height:1.8}
+p strong{color:var(--fg);font-weight:500}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;font-size:.85rem;color:var(--fg3)}
+.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.fade.show{opacity:1;transform:translateY(0)}
 .data-item{padding:1.1rem 0;border-bottom:1px solid var(--border)}.data-item:last-child{border-bottom:none}
 .data-item h3{font-size:1.05rem;margin-bottom:.25rem}
 .data-item p{margin:0;font-size:.97rem}
+@media(max-width:700px){nav .links{gap:1rem}.content{padding:2rem 1.5rem 3rem}}
 </style>
 </head>
 <body>
@@ -21,29 +41,11 @@
 <p class="page-sub fade">Datasets, supplementary materials, and data products associated with published research.</p>
 
 <h2 class="fade">Available Datasets</h2>
+<div class="data-item fade"><h3>Hunga Tonga–Hunga Ha'apai Eruption: Supplementary Data &amp; Movies</h3><p>Supplementary data files and movies for the eruption chronology of the December 2021 to January 2022 Hunga Tonga–Hunga Ha'apai eruption sequence, including Himawari-8 brightness temperature fields, umbrella-cloud masks, and radial expansion time series.<br><strong>Repository:</strong> <a href="https://doi.org/10.5281/zenodo.7250365" target="_blank">Zenodo (DOI: 10.5281/zenodo.7250365)</a><br><strong>Associated publication:</strong> Gupta et al. (2022), <em>Communications Earth &amp; Environment</em>.</p></div>
+<div class="data-item fade"><h3>21st-Century Global Dust Cycle Reconstruction</h3><p>Monthly, size-resolved 4-D fields of dust aerosol optical depth (DAOD), dust loading, concentrations, and emission/deposition fluxes (2003–2023) derived from large-ensemble Monte Carlo inverse modeling constrained by multi-sensor satellite records (IASI, MIDAS, CALIPSO), three aerosol reanalyses, and AERONET sites.<br><strong>Status:</strong> Dataset to be released upon publication in <em>Science Advances</em> (2026).<br><strong>Associated preprint:</strong> <a href="https://doi.org/10.21203/rs.3.rs-8454087/v1" target="_blank">Research Square</a>.</p></div>
+<div class="data-item fade"><h3>Hunga Eruption Radiative Forcing Data</h3><p>Stratospheric composition observations and idealized radiative transfer model simulation outputs used to estimate the net top-of-atmosphere radiative energy loss from the 2022 Hunga eruption (sulfate aerosols, water vapor, and ozone perturbations).<br><strong>Associated publication:</strong> Gupta et al. (2025), <em>Communications Earth &amp; Environment</em>. <a href="https://doi.org/10.1038/s43247-025-02181-9" target="_blank">DOI</a></p></div>
 
-<div class="data-item fade">
-  <h3>Hunga Tonga–Hunga Ha'apai Eruption: Supplementary Data &amp; Movies</h3>
-  <p>Supplementary data files and movies for the eruption chronology of the December 2021 to January 2022 Hunga Tonga–Hunga Ha'apai eruption sequence, including Himawari-8 brightness temperature fields, umbrella-cloud masks, and radial expansion time series.<br>
-  <strong>Repository:</strong> <a href="https://doi.org/10.5281/zenodo.7250365" target="_blank">Zenodo (DOI: 10.5281/zenodo.7250365)</a><br>
-  <strong>Associated publication:</strong> Gupta et al. (2022), <em>Communications Earth &amp; Environment</em>.</p>
-</div>
-
-<div class="data-item fade">
-  <h3>21st-Century Global Dust Cycle Reconstruction</h3>
-  <p>Monthly, size-resolved 4-D fields of dust aerosol optical depth (DAOD), dust loading, concentrations, and emission/deposition fluxes (2003–2023) derived from large-ensemble Monte Carlo inverse modeling constrained by multi-sensor satellite records (IASI, MIDAS, CALIPSO), three aerosol reanalyses, and AERONET sites.<br>
-  <strong>Status:</strong> Dataset to be released upon publication in <em>Science Advances</em> (2026).<br>
-  <strong>Associated preprint:</strong> <a href="https://doi.org/10.21203/rs.3.rs-8454087/v1" target="_blank">Research Square</a>.</p>
-</div>
-
-<div class="data-item fade">
-  <h3>Hunga Eruption Radiative Forcing Data</h3>
-  <p>Stratospheric composition observations and idealized radiative transfer model simulation outputs used to estimate the net top-of-atmosphere radiative energy loss from the 2022 Hunga eruption (sulfate aerosols, water vapor, and ozone perturbations).<br>
-  <strong>Associated publication:</strong> Gupta et al. (2025), <em>Communications Earth &amp; Environment</em>. <a href="https://doi.org/10.1038/s43247-025-02181-9" target="_blank">DOI</a></p>
-</div>
-
-<p class="fade" style="margin-top:2rem;color:var(--fg3);font-size:.9rem">Additional datasets are available upon reasonable request. Please contact <a href="mailto:ashok.k.gupta@vanderbilt.edu">ashok.k.gupta@vanderbilt.edu</a>.</p>
-
+<p class="fade" style="margin-top:2rem;color:var(--fg3);font-size:.92rem">Additional datasets are available upon reasonable request. Please contact <a href="mailto:ashok.k.gupta@vanderbilt.edu">ashok.k.gupta@vanderbilt.edu</a>.</p>
 </div>
 <footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
 <script>const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.08});document.querySelectorAll('.fade').forEach(el=>obs.observe(el));</script>

@@ -6,8 +6,25 @@
 <title>Publications — Ashok Kumar Gupta, Ph.D.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 <style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--white:#ffffff;--bg:#f8f9fb;--fg:#1d1d1f;--fg2:#4a4a4f;--fg3:#8e8e93;--blue:#1a5276;--blue-light:#eaf2f8;--gold:#b7791f;--border:#e5e7eb;--serif:'Source Serif 4',Georgia,serif;--sans:'Source Sans 3','Segoe UI',sans-serif;--max:1080px}
+html{scroll-behavior:smooth;font-size:17px}
+body{font-family:var(--sans);background:var(--white);color:var(--fg);line-height:1.75;-webkit-font-smoothing:antialiased}
+nav{border-bottom:1px solid var(--border);background:var(--white);position:sticky;top:0;z-index:100}
+nav .inner{max-width:var(--max);margin:0 auto;padding:.85rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .brand{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--blue);text-decoration:none}
+nav .links{display:flex;gap:1.8rem;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--fg3);font-size:.88rem;font-weight:500;transition:color .2s}
+nav .links a:hover,nav .links a.active{color:var(--blue)}
+.content{max-width:920px;margin:0 auto;padding:2.5rem 2rem 4rem}
+h1.page-title{font-family:var(--serif);font-size:2rem;font-weight:600;margin-bottom:.15rem}
+.page-sub{font-size:.95rem;color:var(--fg3);margin-bottom:2.2rem}
+h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--fg);margin:2.8rem 0 1rem;padding-bottom:.45rem;border-bottom:2px solid var(--blue);display:inline-block}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;font-size:.85rem;color:var(--fg3)}
+.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.fade.show{opacity:1;transform:translateY(0)}
+
 ol.pubs{list-style:none;counter-reset:p}
 ol.pubs li{counter-increment:p;position:relative;padding:1rem 0 1rem 2.6rem;border-bottom:1px solid var(--border);font-size:.97rem;line-height:1.7;transition:background .2s}
 ol.pubs li:hover{background:var(--bg);margin-left:-10px;padding-left:calc(2.6rem + 10px);border-radius:4px}
@@ -24,9 +41,9 @@ ol.pubs li a{color:var(--blue);font-weight:500}
 .feat .body{padding:1.1rem}
 .feat h3{font-family:var(--serif);font-size:.98rem;font-weight:600;margin-bottom:.2rem;line-height:1.35}
 .feat .meta{font-size:.84rem;color:var(--blue);font-weight:500;margin-bottom:.4rem}
-.feat p{font-size:.9rem;margin:0}
+.feat p{font-size:.9rem;color:var(--fg2);font-weight:300;line-height:1.55;margin:0}
 .feat .bl{margin-top:.4rem;font-size:.85rem;font-weight:500;color:var(--gold)}
-@media(max-width:700px){.feat-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.feat-grid{grid-template-columns:1fr}nav .links{gap:1rem}.content{padding:2rem 1.5rem 3rem}}
 </style>
 </head>
 <body>
@@ -37,46 +54,28 @@ ol.pubs li a{color:var(--blue);font-weight:500}
 <p class="page-sub fade">Peer-reviewed journal articles, manuscripts under review, and featured work.</p>
 
 <h2 class="fade">Peer-Reviewed Publications</h2>
-
 <ol class="pubs">
 <li class="fade"><span class="t">A global decline in atmospheric dust during the 21st century.</span> <span class="new-tag">New 2026</span><br><span class="au">Ashok Kumar Gupta, J. F. Kok, V. Amiridis, A. Gkikas, K. Rizos, E. Proestakis, S. Logothetis, E. Marinou &amp; C. Pérez García-Pando.</span><br><span class="j">Science Advances</span> (2026; accepted with minor revision). <a href="https://doi.org/10.21203/rs.3.rs-8454087/v1" target="_blank">Preprint</a></li>
-
 <li class="fade"><span class="t">Desert dust exerts a substantial longwave radiative forcing missing from climate models.</span> <span class="new-tag">New 2026</span><br><span class="au">J. F. Kok, Ashok Kumar Gupta, A. T. Evan, A. A. Adebiyi, S. Albani, Y. Balkanski, R. Checa-Garcia, P. R. Colarco, D. Hamilton, Y. Huang, A. Ito, M. Klose, L. Li, N. M. Mahowald, R. L. Miller, V. Obiso, C. Pérez García-Pando, A. Rocha Lima &amp; J. Wan.</span><br><span class="j">Nature Communications</span> (2026). <a href="https://eartharxiv.org/repository/view/9666/" target="_blank">Preprint</a></li>
-
 <li class="fade"><span class="t">The January 2022 Hunga eruption cooled the Southern Hemisphere in 2022 and 2023.</span><br><span class="au">Ashok Kumar Gupta, T. Mittal, K. Fauria, R. Bennartz &amp; J. Kok.</span><br><span class="j">Communications Earth &amp; Environment</span>, 1:240 (2025). <a href="https://doi.org/10.1038/s43247-025-02181-9" target="_blank">DOI</a></li>
-
 <li class="fade"><span class="t">Eruption chronology of the December 2021 to January 2022 Hunga Tonga–Hunga Ha'apai eruption sequence.</span><br><span class="au">Ashok Kumar Gupta, R. Bennartz, K. E. Fauria &amp; T. Mittal.</span><br><span class="j">Communications Earth &amp; Environment</span> (2022). <a href="https://doi.org/10.1038/s43247-022-00606-3" target="_blank">DOI</a></li>
-
 <li class="fade"><span class="t">The microphysics of warm-rain and ice-crystal processes of precipitation in simulated continental convective storms.</span><br><span class="au">Ashok Kumar Gupta, V. T. J. Phillips, D. Waman, S. Patade, A. Deshmukh, A. Jadav &amp; A. Bansemer.</span><br><span class="j">Communications Earth &amp; Environment</span> (2023). <a href="https://doi.org/10.1038/s43247-023-00884-5" target="_blank">DOI</a></li>
-
 <li class="fade"><span class="t">Ash deposition triggers phytoplankton blooms at Nishinoshima Volcano, Japan.</span><br><span class="au">L. Kelly, K. Fauria, T. Mittal, J. El Kassar, R. Bennartz, D. Nicholson, A. Subramaniam &amp; Ashok Kumar Gupta.</span><br><span class="j">Geochemistry, Geophysics, Geosystems</span>, 24(11): e2023GC010914 (2023).</li>
-
 <li class="fade"><span class="t">Simultaneous creation of a large vapor plume and pumice raft by the 2021 Fukutoku-Oka-no-Ba eruption.</span><br><span class="au">K. E. Fauria, M. Jutzeler, T. Mittal, Ashok Kumar Gupta, L. Kelly, J. Rausch, R. Bennartz, B. Delbridge &amp; L. Retailleau.</span><br><span class="j">Earth and Planetary Science Letters</span>, 118076 (2023).</li>
-
 <li class="fade"><span class="t">The influence of multiple biological ice-nucleating groups on mixed-phase clouds during MC3E.</span><br><span class="au">S. Patade, D. Waman, A. Deshmukh, A. Jadav, Ashok Kumar Gupta, V. T. J. Phillips, A. Bansemer, J. Carlin &amp; A. Ryzhkov.</span><br><span class="j">Atmospheric Chemistry and Physics</span>, 22(18): 12055–12075 (2022).</li>
-
 <li class="fade"><span class="t">Dependencies of secondary ice production on cloud-top temperature in a continental convective storm.</span><br><span class="au">D. Waman, S. Patade, A. Jadav, A. Deshmukh, Ashok Kumar Gupta, V. T. J. Phillips, A. Bansemer &amp; P. J. DeMott.</span><br><span class="j">Journal of the Atmospheric Sciences</span>, 79(12): 3375–3404 (2022).</li>
-
 <li class="fade"><span class="t">Multi-year diurnal variations of TOA cloud radiative forcing over the tropics from Megha-Tropiques-ScaRaB/3.</span><br><span class="au">Ashok Kumar Gupta, K. Rajeev, E. V. Davis, M. K. Mishra &amp; A. K. M. Nair.</span><br><span class="j">Climate Dynamics</span>, 55: 3289–3306 (2020). <a href="https://doi.org/10.1007/s00382-020-05441-w" target="_blank">DOI</a></li>
-
 <li class="fade"><span class="t">Enhanced daytime occurrence of upper-tropospheric clouds over land and ocean.</span><br><span class="au">Ashok Kumar Gupta, K. Rajeev, S. Sijikumar &amp; A. K. M. Nair.</span><br><span class="j">Atmospheric Research</span>, 201: 133–143 (2018).</li>
-
 <li class="fade"><span class="t">Day–night changes in low-altitude cloud properties over stratocumulus-dominated oceans.</span><br><span class="au">Ashok Kumar Gupta, K. Rajeev &amp; S. Sijikumar.</span><br><span class="j">Journal of Atmospheric and Solar-Terrestrial Physics</span>, 161: 118–126 (2017). <a href="https://doi.org/10.1016/j.jastp.2017.06.021" target="_blank">DOI</a></li>
-
 <li class="fade"><span class="t">Diurnal variation of shortwave aerosol direct radiative effect over dust-dominated regions.</span><br><span class="au">M. K. Mishra, Ashok Kumar Gupta &amp; K. Rajeev.</span><br><span class="j">IEEE Trans. Geosci. Remote Sens.</span>, 55: 6610–6616 (2017). <a href="https://doi.org/10.1109/TGRS.2017.2730758" target="_blank">DOI</a></li>
 </ol>
 
 <h2 class="fade">Under Review / Manuscripts in Preparation</h2>
-
 <ol class="pubs fade" style="counter-reset:p">
 <li><span class="t">Organization of ice-multiplication mechanisms among basic cloud types — Part I: Validation and analysis of the control simulations.</span><br><span class="au">A. Deshmukh, D. Waman, S. Patade, M. Gautam, V. T. J. Phillips, A. Bansemer, Ashok Kumar Gupta, P. Connolly, G. McFarquhar, P. J. DeMott, J. Fan, Y. Lin, J. Schrod &amp; H. Bingemer.</span><br><span class="j">Under review (Journal of the Atmospheric Sciences).</span></li>
-
 <li><span class="t">Organization of ice-multiplication mechanisms among basic cloud types — Part II: Sensitivity tests.</span><br><span class="au">A. Deshmukh, D. Waman, S. Patade, Ashok Kumar Gupta &amp; V. T. J. Phillips.</span><br><span class="j">Under review (Journal of the Atmospheric Sciences).</span></li>
-
 <li><span class="t">Observational evidence of enhanced stabilization tendency due to tropical thin cirrus longwave heating.</span><br><span class="au">Ashok Kumar Gupta &amp; R. Bennartz.</span><br><span class="j">Revising for npj Climate and Atmospheric Science.</span></li>
-
 <li><span class="t">Deep learning-based temporal tracking of volcanic umbrella cloud properties from spaceborne sensors: The 2022 Hunga and 2024 Ruang eruptions.</span><br><span class="au">Ashok Kumar Gupta &amp; R. Bennartz.</span><br><span class="j">Manuscript ready for submission (Remote Sensing of Environment).</span></li>
-
 <li><span class="t">Multi-model examination of the direct radiative forcing from reconstructed dust changes since pre-industrial.</span><br><span class="au">O. W. Haugvaldstad, J. Kok, T. Storelvmo, M. Schulz, …, Ashok Kumar Gupta, et al.</span><br><span class="j">In preparation (Atmospheric Chemistry and Physics).</span></li>
 </ol>
 
@@ -87,7 +86,6 @@ ol.pubs li a{color:var(--blue);font-weight:500}
 <div class="feat"><img src="figures/Fig_2.png" alt="Warm vs cold rain"><div class="body"><h3>Warm vs. cold rain in continental storms</h3><div class="meta">Gupta et al., 2023 · Comms Earth &amp; Env</div><p>Warm-rain processes account for ~80% of surface precipitation in very warm-based clouds.</p><p class="bl">Cloud-base warming shifts precipitation to warm-rain.</p></div></div>
 <div class="feat"><img src="figures/Fig_3.png" alt="Hunga chronology"><div class="body"><h3>Volcanic umbrella clouds: Hunga Tonga</h3><div class="meta">Gupta et al., 2022 · Comms Earth &amp; Env</div><p>Unprecedented umbrella heights (~31 km), two ice-rich layers, volumetric flow of ~5.0 × 10¹¹ m³ s⁻¹.</p><p class="bl">Record-high volcanic clouds redefine eruption science.</p></div></div>
 </div>
-
 </div>
 <footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
 <script>const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.08});document.querySelectorAll('.fade').forEach(el=>obs.observe(el));</script>

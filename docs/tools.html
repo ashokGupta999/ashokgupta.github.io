@@ -6,11 +6,30 @@
 <title>Tools &amp; Skills — Ashok Kumar Gupta, Ph.D.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 <style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--white:#ffffff;--bg:#f8f9fb;--fg:#1d1d1f;--fg2:#4a4a4f;--fg3:#8e8e93;--blue:#1a5276;--border:#e5e7eb;--serif:'Source Serif 4',Georgia,serif;--sans:'Source Sans 3','Segoe UI',sans-serif;--max:1080px}
+html{scroll-behavior:smooth;font-size:17px}
+body{font-family:var(--sans);background:var(--white);color:var(--fg);line-height:1.75;-webkit-font-smoothing:antialiased}
+nav{border-bottom:1px solid var(--border);background:var(--white);position:sticky;top:0;z-index:100}
+nav .inner{max-width:var(--max);margin:0 auto;padding:.85rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .brand{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--blue);text-decoration:none}
+nav .links{display:flex;gap:1.8rem;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--fg3);font-size:.88rem;font-weight:500;transition:color .2s}
+nav .links a:hover,nav .links a.active{color:var(--blue)}
+.content{max-width:920px;margin:0 auto;padding:2.5rem 2rem 4rem}
+h1.page-title{font-family:var(--serif);font-size:2rem;font-weight:600;margin-bottom:.15rem}
+.page-sub{font-size:.95rem;color:var(--fg3);margin-bottom:2.2rem}
+h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--fg);margin:2.8rem 0 1rem;padding-bottom:.45rem;border-bottom:2px solid var(--blue);display:inline-block}
+h3{font-family:var(--serif);font-size:1.08rem;font-weight:600;color:var(--fg);margin-bottom:.3rem}
+p{margin-bottom:1rem;font-size:1rem;color:var(--fg2);font-weight:300;line-height:1.8}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;font-size:.85rem;color:var(--fg3)}
+.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.fade.show{opacity:1;transform:translateY(0)}
 .tool-section{padding:1rem 0;border-bottom:1px solid var(--border)}.tool-section:last-child{border-bottom:none}
 .tool-section h3{font-size:1.05rem;margin-bottom:.35rem}
 .tool-section p{margin:0;font-size:.97rem}
+@media(max-width:700px){nav .links{gap:1rem}.content{padding:2rem 1.5rem 3rem}}
 </style>
 </head>
 <body>
@@ -21,47 +40,19 @@
 <p class="page-sub fade">Computational tools, programming languages, models, and platforms used in my research.</p>
 
 <h2 class="fade">Programming &amp; AI Frameworks</h2>
-<div class="tool-section fade">
-  <h3>Languages</h3>
-  <p>Python (SciPy, NumPy, xarray, Pandas), C++, Fortran, MATLAB, IDL, NCL.</p>
-</div>
-<div class="tool-section fade">
-  <h3>Machine Learning &amp; Deep Learning</h3>
-  <p>PyTorch, TensorFlow (including Keras), scikit-learn, MXNet, JAX, XGBoost. Architectures: CNNs, RNNs (LSTM, GRU), ConvLSTM, autoencoders, U-Nets, GANs, and Transformer-based models.</p>
-</div>
-<div class="tool-section fade">
-  <h3>Cloud &amp; HPC</h3>
-  <p>Experience deploying and managing workloads on AWS and Azure cloud platforms. Proficient in high-performance computing (HPC) environments across Linux, macOS, and Windows.</p>
-</div>
+<div class="tool-section fade"><h3>Languages</h3><p>Python (SciPy, NumPy, xarray, Pandas), C++, Fortran, MATLAB, IDL, NCL.</p></div>
+<div class="tool-section fade"><h3>Machine Learning &amp; Deep Learning</h3><p>PyTorch, TensorFlow (including Keras), scikit-learn, MXNet, JAX, XGBoost. Architectures: CNNs, RNNs (LSTM, GRU), ConvLSTM, autoencoders, U-Nets, GANs, and Transformer-based models.</p></div>
+<div class="tool-section fade"><h3>Cloud &amp; HPC</h3><p>Experience deploying and managing workloads on AWS and Azure cloud platforms. Proficient in high-performance computing (HPC) environments across Linux, macOS, and Windows.</p></div>
 
 <h2 class="fade">Numerical Models</h2>
-<div class="tool-section fade">
-  <h3>Climate &amp; Weather Models</h3>
-  <p>Community Earth System Model Version 2 (CESM2), WRF and WRF-Chem, CMIP6 multi-model ensemble analysis, E3SM.</p>
-</div>
-<div class="tool-section fade">
-  <h3>Radiative Transfer</h3>
-  <p>libRadTran (DISORT six-stream solver), RRTM. Conducted global, seasonally resolved clear-sky simulations of atmospheric absorptivity.</p>
-</div>
-<div class="tool-section fade">
-  <h3>Aerosol–Cloud Models</h3>
-  <p>Developed and implemented cloud microphysics algorithms within the state-of-the-art 3-D Aerosol–Cloud (AC) Model (Fortran; Lund University). Monte Carlo–based inverse modeling for global dust cycle reconstruction.</p>
-</div>
+<div class="tool-section fade"><h3>Climate &amp; Weather Models</h3><p>Community Earth System Model Version 2 (CESM2), WRF and WRF-Chem, CMIP6 multi-model ensemble analysis, E3SM.</p></div>
+<div class="tool-section fade"><h3>Radiative Transfer</h3><p>libRadTran (DISORT six-stream solver), RRTM. Conducted global, seasonally resolved clear-sky simulations of atmospheric absorptivity.</p></div>
+<div class="tool-section fade"><h3>Aerosol–Cloud Models</h3><p>Developed and implemented cloud microphysics algorithms within the state-of-the-art 3-D Aerosol–Cloud (AC) Model (Fortran; Lund University). Monte Carlo–based inverse modeling for global dust cycle reconstruction.</p></div>
 
 <h2 class="fade">Satellite &amp; Observational Datasets</h2>
-<div class="tool-section fade">
-  <h3>Multi-Sensor Satellite Data</h3>
-  <p>IASI, MODIS (L1B and products), CloudSat, CALIPSO, Himawari-8/9 (L1 radiances), MIDAS–Aqua/Terra, Megha-Tropiques ScaRaB/3, SAGE III/ISS, CERES, PREFIRE.</p>
-</div>
-<div class="tool-section fade">
-  <h3>Ground-Based &amp; In Situ</h3>
-  <p>AERONET dust-dominated sites, ARM North Slope of Alaska (NSA) observatory, PINE chamber INP measurements, aircraft in-situ probes (CIP, 2D-S), and field campaign validation data.</p>
-</div>
-<div class="tool-section fade">
-  <h3>Reanalysis Products</h3>
-  <p>ERA5, MERRA-2, and three aerosol reanalyses for dust cycle constraint and model evaluation.</p>
-</div>
-
+<div class="tool-section fade"><h3>Multi-Sensor Satellite Data</h3><p>IASI, MODIS (L1B and products), CloudSat, CALIPSO, Himawari-8/9 (L1 radiances), MIDAS–Aqua/Terra, Megha-Tropiques ScaRaB/3, SAGE III/ISS, CERES, PREFIRE.</p></div>
+<div class="tool-section fade"><h3>Ground-Based &amp; In Situ</h3><p>AERONET dust-dominated sites, ARM North Slope of Alaska (NSA) observatory, PINE chamber INP measurements, aircraft in-situ probes (CIP, 2D-S), and field campaign validation data.</p></div>
+<div class="tool-section fade"><h3>Reanalysis Products</h3><p>ERA5, MERRA-2, and three aerosol reanalyses for dust cycle constraint and model evaluation.</p></div>
 </div>
 <footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
 <script>const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.08});document.querySelectorAll('.fade').forEach(el=>obs.observe(el));</script>
