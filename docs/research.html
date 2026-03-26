@@ -5,48 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research — Ashok Kumar Gupta, Ph.D.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#faf9f7;--fg:#1a1a1a;--accent:#2d5a27;--accent2:#8b6914;--muted:#6b6b6b;--border:#e0ddd8;--card:#ffffff;--glow:rgba(45,90,39,.08);--serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
-html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;-webkit-font-smoothing:antialiased}
-nav{position:sticky;top:0;z-index:100;background:rgba(250,249,247,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.85rem 0}
-nav .inner{max-width:1120px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
-nav .brand{font-family:var(--serif);font-size:1.15rem;color:var(--fg);text-decoration:none;letter-spacing:-.02em}
-nav .links{display:flex;gap:1.6rem;flex-wrap:wrap}
-nav .links a{text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
-nav .links a:hover,nav .links a.active{color:var(--accent)}
-.content{max-width:860px;margin:0 auto;padding:3rem 2rem 4rem}
-h1.page-title{font-family:var(--serif);font-size:2.4rem;letter-spacing:-.03em;margin-bottom:.2rem}
-h1.page-title::after{content:'';display:block;width:50px;height:3px;background:var(--accent);border-radius:2px;margin-top:.5rem;margin-bottom:2rem}
-h2{font-family:var(--serif);font-size:1.5rem;letter-spacing:-.02em;margin:2.5rem 0 .8rem;color:var(--accent)}
-h3{font-family:var(--serif);font-size:1.15rem;margin:1.5rem 0 .4rem}
-p{margin-bottom:1rem;font-size:.95rem;color:var(--muted)}
-p strong{color:var(--fg)}
-a{color:var(--accent)}
-.research-num{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.5rem;padding:1.4rem;background:var(--card);border:1px solid var(--border);border-radius:10px;transition:box-shadow .3s}
-.research-num:hover{box-shadow:0 6px 24px var(--glow)}
-.research-num .num{font-family:var(--serif);font-size:2rem;color:var(--accent);line-height:1;min-width:36px;padding-top:.15rem}
-.research-num .text h3{margin:0 0 .3rem;font-size:1.05rem}
-.research-num .text p{margin:0;font-size:.9rem}
+:root{--white:#ffffff;--bg:#f8f9fb;--fg:#1d1d1f;--fg2:#4a4a4f;--fg3:#8e8e93;--blue:#1a5276;--blue-light:#eaf2f8;--gold:#b7791f;--border:#e5e7eb;--serif:'Source Serif 4',Georgia,serif;--sans:'Source Sans 3','Segoe UI',sans-serif;--max:860px}
+html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--white);color:var(--fg);line-height:1.7;-webkit-font-smoothing:antialiased}
+nav{border-bottom:1px solid var(--border);background:var(--white)}
+nav .inner{max-width:1080px;margin:0 auto;padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .brand{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--blue);text-decoration:none}
+nav .links{display:flex;gap:2rem;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--fg3);font-size:.82rem;font-weight:500;transition:color .2s}
+nav .links a:hover,nav .links a.active{color:var(--blue)}
 
-.news-list{list-style:none;padding:0;margin-top:1rem}
-.news-list li{margin-bottom:.6rem;padding-left:1.2rem;position:relative;font-size:.88rem}
-.news-list li::before{content:'→';position:absolute;left:0;color:var(--accent);font-weight:700}
-.news-list li a{color:var(--accent);text-decoration:none}
-.news-list li a:hover{text-decoration:underline}
+.content{max-width:var(--max);margin:0 auto;padding:2.5rem 2rem 4rem}
+h1{font-family:var(--serif);font-size:1.8rem;font-weight:600;margin-bottom:.15rem}
+.subtitle{font-size:.88rem;color:var(--fg3);margin-bottom:2rem}
+h2{font-family:var(--serif);font-size:1.15rem;font-weight:600;color:var(--fg);margin:2.5rem 0 1rem;padding-bottom:.4rem;border-bottom:2px solid var(--blue);display:inline-block}
+p{margin-bottom:1rem;font-size:.92rem;color:var(--fg2);font-weight:300;line-height:1.75}
+p strong{color:var(--fg);font-weight:500}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
 
-footer{border-top:1px solid var(--border);margin-top:4rem;padding:2rem 0;text-align:center;font-size:.8rem;color:var(--muted)}
-.fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
-.fade-up.visible{opacity:1;transform:translateY(0)}
-@media(max-width:768px){nav .links{gap:1rem}}
+/* RESEARCH ITEMS */
+.r-item{padding:1rem 0;border-bottom:1px solid var(--border)}
+.r-item:last-child{border-bottom:none}
+.r-item h3{font-family:var(--serif);font-size:.98rem;font-weight:600;color:var(--fg);margin-bottom:.25rem}
+.r-item p{margin:0;font-size:.87rem}
+
+.news-list{list-style:none;margin-top:.5rem}
+.news-list li{padding:.3rem 0;font-size:.85rem;font-weight:300;color:var(--fg2)}
+.news-list li a{color:var(--blue);font-weight:400}
+
+footer{border-top:1px solid var(--border);margin-top:3rem;padding:1.5rem 0;text-align:center;font-size:.78rem;color:var(--fg3)}
+.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.fade.show{opacity:1;transform:translateY(0)}
+@media(max-width:700px){nav .links{gap:1.2rem}}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="inner">
-    <a href="index.html" class="brand">A. K. Gupta</a>
+    <a href="index.html" class="brand">Ashok K. Gupta</a>
     <div class="links">
       <a href="index.html">Home</a>
       <a href="research.html" class="active">Research</a>
@@ -61,73 +59,66 @@ footer{border-top:1px solid var(--border);margin-top:4rem;padding:2rem 0;text-al
 
 <div class="content">
 
-<h1 class="page-title fade-up">Research</h1>
+<h1 class="fade">Research</h1>
+<p class="subtitle fade">Aerosols, clouds, climate, and land-surface processes — using observations, modeling, machine learning, and inverse techniques.</p>
 
-<p class="fade-up" style="font-size:1.05rem;color:var(--fg);max-width:720px">My research sits at the intersection of aerosols, clouds, climate, and land-surface processes — using observations, modeling, machine learning, and inverse techniques to address aerosol–cloud–climate challenges.</p>
+<h2 class="fade">Research Interests</h2>
 
-<h2 class="fade-up">Research Interests</h2>
-
-<div class="fade-up">
-
-<div class="research-num">
-  <div class="num">1</div>
-  <div class="text">
-    <h3>Convection &amp; Mixed-Phase Cloud Processes</h3>
-    <p>Investigating how aerosols modulate mixed-phase and deep convective clouds — altering precipitation efficiency and storm dynamics — and probing which microphysical pathways dominate ice amplification in midlatitude convective anvils (Waman et al., 2022; Gupta et al., 2023).</p>
-  </div>
+<div class="r-item fade">
+  <h3>1. Convection &amp; Mixed-Phase Cloud Processes</h3>
+  <p>Investigating how aerosols modulate mixed-phase and deep convective clouds — altering precipitation efficiency and storm dynamics — and probing which microphysical pathways dominate ice amplification in midlatitude convective anvils (Waman et al., 2022; Gupta et al., 2023).</p>
 </div>
 
-<div class="research-num">
-  <div class="num">2</div>
-  <div class="text">
-    <h3>Land–Atmosphere Feedbacks &amp; Aerosol Emissions</h3>
-    <p>Examining how land-use change, surface-wind variability, soil-moisture anomalies, and wildfire combine to control dust aerosol loading; assessing how these coupled forcings drive extremes from regional heatwaves to progressive land degradation.</p>
-  </div>
+<div class="r-item fade">
+  <h3>2. Arctic Mixed-Phase Clouds, INP Parameterization &amp; Secondary Ice Production</h3>
+  <p>Studying how mineral-dust and biological ice-nucleating particles (INPs) and secondary ice production (SIP) mechanisms — rime splintering, ice–ice collisional breakup, freezing-drop fragmentation, and sublimation breakup — govern the liquid–ice partitioning of high-latitude mixed-phase clouds and their influence on the polar surface energy budget and sea-ice projections.</p>
 </div>
 
-<div class="research-num">
-  <div class="num">3</div>
-  <div class="text">
-    <h3>Remote Sensing Retrievals of Aerosol &amp; Cloud Properties</h3>
-    <p>Developing satellite- and ground-based algorithms to constrain key aerosol metrics (AOD, size distribution, single-scattering albedo) and cloud properties (liquid &amp; ice water paths, effective radius) — essential for narrowing uncertainties in Earth's radiation budget.</p>
-  </div>
+<div class="r-item fade">
+  <h3>3. Polar Cloud Radiative Effects &amp; NASA PREFIRE</h3>
+  <p>Leveraging NASA's PREFIRE calibrated far-infrared/infrared spectral observations (~5–54 µm) to characterize spectrally resolved longwave cloud radiative effects across polar regions, enabling regime-dependent diagnostics and evaluation of reanalyses and climate models directly in measurement space.</p>
 </div>
 
-<div class="research-num">
-  <div class="num">4</div>
-  <div class="text">
-    <h3>Volcanic Influences on Stratospheric Composition &amp; Radiation</h3>
-    <p>Through detailed case studies — most recently the 2022 Hunga eruption — quantifying how volcanic injections of water vapor and SO₂ perturb stratospheric chemistry and radiative forcing, and evaluating their impacts on global surface temperatures (Gupta et al., 2022, 2025).</p>
-  </div>
+<div class="r-item fade">
+  <h3>4. Land–Atmosphere Feedbacks &amp; Aerosol Emissions</h3>
+  <p>Examining how land-use change, surface-wind variability, soil-moisture anomalies, and wildfire combine to control dust aerosol loading; assessing how these coupled forcings drive extremes from regional heatwaves to progressive land degradation.</p>
 </div>
 
-<div class="research-num">
-  <div class="num">5</div>
-  <div class="text">
-    <h3>Real-Time Automated Detection of Volcanic Umbrella Clouds</h3>
-    <p>Using machine learning (patch-wise ConvLSTM auto-encoder), retrieving volcanic umbrella-cloud tops at sub-km resolution from a single visible/IR frame, cutting latency from hours to seconds. The system tracked 98% of umbrella-top evolution during the April 2024 Ruang eruption (Gupta &amp; Bennartz, manuscript ready).</p>
-  </div>
+<div class="r-item fade">
+  <h3>5. Remote Sensing Retrievals of Aerosol &amp; Cloud Properties</h3>
+  <p>Developing satellite- and ground-based algorithms to constrain key aerosol metrics (AOD, size distribution, single-scattering albedo) and cloud properties (liquid &amp; ice water paths, effective radius) — essential for narrowing uncertainties in Earth's radiation budget.</p>
 </div>
 
+<div class="r-item fade">
+  <h3>6. Volcanic Influences on Stratospheric Composition &amp; Radiation</h3>
+  <p>Through detailed case studies — most recently the 2022 Hunga eruption — quantifying how volcanic injections of water vapor and SO₂ perturb stratospheric chemistry and radiative forcing, and evaluating their impacts on global surface temperatures (Gupta et al., 2022, 2025).</p>
 </div>
 
-<h2 class="fade-up">Current Research</h2>
+<div class="r-item fade">
+  <h3>7. Real-Time Automated Detection of Volcanic Umbrella Clouds</h3>
+  <p>Using machine learning (patch-wise ConvLSTM auto-encoder), retrieving volcanic umbrella-cloud tops at sub-km resolution from a single visible/IR frame, cutting latency from hours to seconds. The system tracked 98% of umbrella-top evolution during the April 2024 Ruang eruption (Gupta &amp; Bennartz, manuscript ready).</p>
+</div>
 
-<div class="fade-up">
+<h2 class="fade">Current Research</h2>
+
+<div class="fade">
 <p><strong>As Staff Scientist at Vanderbilt University</strong>, I am developing deep-learning–enhanced satellite algorithms for retrieving ice-cloud microphysical properties in support of NASA's PolSIR (Polarized Submillimeter Ice-cloud Radiometer) mission, delivering global, all-weather measurements of ice clouds to constrain their impact on Earth's radiation budget.</p>
 
-<p>I have reconstructed the 21st-century global dust cycle by combining ground-based and satellite observations, three aerosol reanalyses, and a large-ensemble inverse modeling framework. We show that global dust aerosol optical depth declined by −10 ± 8 % between 2003 and 2023 — the strongest evidence to date that the planet has become less dusty in the early 21st century. This work is now <strong>accepted in Science Advances (2026)</strong>.</p>
+<p>I have reconstructed the 21st-century global dust cycle by combining ground-based and satellite observations, three aerosol reanalyses, and a large-ensemble inverse modeling framework. We show that global dust aerosol optical depth declined by −10 ± 8 % between 2003 and 2023 — the strongest evidence to date that the planet has become less dusty in the early 21st century. This work is now <strong>accepted with minor revision in Science Advances (2026)</strong>.</p>
 
 <p>In parallel, I contributed to an observationally constrained framework quantifying the longwave direct radiative forcing of desert dust. We constrain the present-day clear-sky dust longwave DRE to +0.25 ± 0.06 W m⁻² — nearly double current climate model estimates. This work is now <strong>accepted in Nature Communications (2026)</strong>.</p>
 
 <p>I also continue developing a physics-informed, scene-adaptive machine-learning model that detects volcanic umbrella clouds in near-real time using Himawari-8/9 imagery, and I am investigating with deep-learning–based PCA the drivers of the 21st-century decline in dust aerosols.</p>
+
+<p>A new line of research uses NASA's <strong>PREFIRE</strong> calibrated far-infrared and infrared spectral radiances (~5–54 µm) to quantify spectrally resolved longwave cloud radiative effects across both polar regions. By diagnosing cloud–thermodynamic interactions in spectral measurement space rather than broadband totals, this work aims to identify regime-dependent radiative fingerprints and provide observationally constrained benchmarks for evaluating reanalyses and climate models.</p>
+
+<p>I am also investigating the impact of <strong>mineral-dust ice-nucleating particles (INPs) on Arctic mixed-phase clouds and secondary ice production (SIP)</strong>. This work examines how composition-aware INP parameterizations and multiple SIP mechanisms — including rime splintering, ice–ice collisional breakup, freezing-drop fragmentation, and sublimation breakup — interact to control the liquid–ice partitioning that governs the high-latitude surface energy budget, with implications for sea-ice and permafrost projections.</p>
 </div>
 
-<h2 class="fade-up">News Coverage</h2>
+<h2 class="fade">News Coverage</h2>
 
-<div class="fade-up">
+<div class="fade">
 <p>Our work on the Hunga Tonga eruption and its unexpected cooling effect has been widely covered:</p>
-
 <ul class="news-list">
   <li><a href="https://phys.org/news/2025-04-hunga-volcano-eruption-unexpected-southern.html" target="_blank">Phys.org — Unexpected Southern Cooling (Apr 2025)</a></li>
   <li><a href="https://newsroom.ucla.edu/releases/hunga-volcano-eruption-cooled-southern-hemisphere" target="_blank">UCLA Newsroom</a></li>
@@ -144,15 +135,11 @@ footer{border-top:1px solid var(--border);margin-top:4rem;padding:2rem 0;text-al
 
 </div>
 
-<footer>
-  <p>&copy; 2026 Ashok Kumar Gupta, Ph.D. &middot; Vanderbilt University</p>
-</footer>
+<footer>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</footer>
 
 <script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') });
-}, {threshold: 0.1});
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.08});
+document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
 </script>
 </body>
 </html>
