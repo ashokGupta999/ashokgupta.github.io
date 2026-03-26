@@ -25,7 +25,7 @@ p{margin-bottom:1rem;font-size:1rem;color:var(--fg2);font-weight:300;line-height
 p strong{color:var(--fg);font-weight:500}
 a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
 footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;font-size:.85rem;color:var(--fg3)}
-.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.fade.show{opacity:1;transform:translateY(0)}
+.fade{animation:fadeUp .6s ease both}.fade:nth-child(2){animation-delay:.1s}.fade:nth-child(3){animation-delay:.2s}@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .r-item{padding:1.1rem 0;border-bottom:1px solid var(--border)}.r-item:last-child{border-bottom:none}
 .r-item h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--fg);margin-bottom:.3rem}
 .r-item p{margin:0;font-size:.97rem;color:var(--fg2);font-weight:300;line-height:1.75}
@@ -79,6 +79,6 @@ footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;fon
 </div>
 </div>
 <footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
-<script>const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.08});document.querySelectorAll('.fade').forEach(el=>obs.observe(el));</script>
+
 </body>
 </html>

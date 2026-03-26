@@ -26,7 +26,7 @@ p{margin-bottom:1rem;font-size:1rem;color:var(--fg2);font-weight:300;line-height
 p strong{color:var(--fg);font-weight:500}
 a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
 footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;font-size:.85rem;color:var(--fg3)}
-.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.fade.show{opacity:1;transform:translateY(0)}
+.fade{animation:fadeUp .6s ease both}.fade:nth-child(2){animation-delay:.1s}.fade:nth-child(3){animation-delay:.2s}@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .data-item{padding:1.1rem 0;border-bottom:1px solid var(--border)}.data-item:last-child{border-bottom:none}
 .data-item h3{font-size:1.05rem;margin-bottom:.25rem}
 .data-item p{margin:0;font-size:.97rem}
@@ -45,9 +45,7 @@ footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;fon
 <div class="data-item fade"><h3>21st-Century Global Dust Cycle Reconstruction</h3><p>Monthly, size-resolved 4-D fields of dust aerosol optical depth (DAOD), dust loading, concentrations, and emission/deposition fluxes (2003–2023) derived from large-ensemble Monte Carlo inverse modeling constrained by multi-sensor satellite records (IASI, MIDAS, CALIPSO), three aerosol reanalyses, and AERONET sites.<br><strong>Status:</strong> Dataset to be released upon publication in <em>Science Advances</em> (2026).<br><strong>Associated preprint:</strong> <a href="https://doi.org/10.21203/rs.3.rs-8454087/v1" target="_blank">Research Square</a>.</p></div>
 <div class="data-item fade"><h3>Hunga Eruption Radiative Forcing Data</h3><p>Stratospheric composition observations and idealized radiative transfer model simulation outputs used to estimate the net top-of-atmosphere radiative energy loss from the 2022 Hunga eruption (sulfate aerosols, water vapor, and ozone perturbations).<br><strong>Associated publication:</strong> Gupta et al. (2025), <em>Communications Earth &amp; Environment</em>. <a href="https://doi.org/10.1038/s43247-025-02181-9" target="_blank">DOI</a></p></div>
 
-<p class="fade" style="margin-top:2rem;color:var(--fg3);font-size:.92rem">Additional datasets are available upon reasonable request. Please contact <a href="mailto:ashok.k.gupta@vanderbilt.edu">ashok.k.gupta@vanderbilt.edu</a>.</p>
 </div>
 <footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
-<script>const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.08});document.querySelectorAll('.fade').forEach(el=>obs.observe(el));</script>
 </body>
 </html>
