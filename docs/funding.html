@@ -1,22 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width">
-  <base href="./"><title>Funding Acknowledgement</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funding — Ashok Kumar Gupta, Ph.D.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.fund-item{padding:1.1rem 0;border-bottom:1px solid var(--border)}.fund-item:last-child{border-bottom:none}
+.fund-item h3{font-size:1.05rem;margin-bottom:.25rem}
+.fund-item .agency{font-size:.92rem;color:var(--blue);font-weight:500;margin-bottom:.3rem}
+.fund-item p{margin:0;font-size:.97rem}
+</style>
 </head>
 <body>
-  <header><nav class="container nav"><a href="index.html" class="">Home</a><a href="research.html" class="">Research</a><a href="publications.html" class="">Publications</a><a href="mentoring.html" class="">Student Mentoring</a><a href="tools.html" class="">Tools</a><a href="scidata.html" class="">Scientific Data</a><a href="funding.html" class="active">Funding Acknowledgement</a><button id="themeToggle" title="Toggle theme">🌓</button></nav></header>
-  <section class="container">
-    <div class="research-frame">
-      <h2>Funding Acknowledgement</h2>
-      <p>My research is primarily funded by NASA and NSF grants awarded to various PIs (PI: Ralf Bennartz; co-PI: Kristen Fauria), including current support from the National Science Foundation’s Directorate for Geosciences (grant 2151093; PI: Jasper Kok). In addition, a DOE grant proposal for international collaborative work, for which I submitted the proposal as lead PI, is currently under review.</p>
+<nav><div class="inner"><a href="index.html" class="brand">Ashok K. Gupta</a><div class="links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="mentoring.html">Mentoring</a><a href="tools.html">Tools</a><a href="scidata.html">Data</a><a href="funding.html" class="active">Funding</a></div></div></nav>
 
-    </div>
-  </section>
-  <footer class="container">© 2025 Ashok Kumar Gupta, Ph.D.</footer>
-  <button id="toTop" title="Back to top">↑</button>
-  <script src="scroll-fade.js"></script>
+<div class="content">
+<h1 class="page-title fade">Funding Acknowledgement</h1>
+<p class="page-sub fade">Competitive research proposals submitted and funding support for ongoing and past work.</p>
+
+<h2 class="fade">Competitive Research Proposals (2025–2026, as PI)</h2>
+
+<div class="fund-item fade">
+  <h3>Unraveling Secondary Ice: The Impact of Mineral Dust on Mixed-Phase High-Latitude Clouds and Earth's Energy Budget</h3>
+  <div class="agency">DOE Office of Science, BER — 2026 Open Call</div>
+  <p>Submitting as Principal Investigator on a large, multi-institutional collaborative proposal addressing secondary ice production processes driven by mineral dust in Arctic mixed-phase clouds.</p>
+</div>
+
+<div class="fund-item fade">
+  <h3>Quantifying Polar Longwave Effective Cloud Radiative Forcing Constrained by PREFIRE Observations</h3>
+  <div class="agency">NASA ROSES–2025 (PREFIRE Science Applications Team)</div>
+  <p>PI-led proposal to leverage PREFIRE spectral radiances for spectrally resolved longwave cloud radiative diagnostics across the polar regions. Step 1 submitted.</p>
+</div>
+
+<h2 class="fade">Awards &amp; Fellowships</h2>
+
+<div class="fund-item fade">
+  <h3>Postdoctoral Fellowship</h3>
+  <div class="agency">Vanderbilt University, Nashville, TN (Nov 2019)</div>
+</div>
+<div class="fund-item fade">
+  <h3>Postdoctoral Fellowship</h3>
+  <div class="agency">Lund University, Sweden (Jun 2019)</div>
+</div>
+<div class="fund-item fade">
+  <h3>SOLAS Grant — 2018 SOLAS Summer School</h3>
+  <div class="agency">Cargese, Corsica, France (Jul 2018)</div>
+</div>
+<div class="fund-item fade">
+  <h3>Postdoctoral Fellowship</h3>
+  <div class="agency">ISRO, Thiruvananthapuram, India (Jun 2018)</div>
+</div>
+<div class="fund-item fade">
+  <h3>Senior Research Fellowship</h3>
+  <div class="agency">ISRO, Thiruvananthapuram, India (Dec 2013)</div>
+</div>
+<div class="fund-item fade">
+  <h3>Junior Research Fellowship</h3>
+  <div class="agency">ISRO, Thiruvananthapuram, India (Dec 2011)</div>
+</div>
+<div class="fund-item fade">
+  <h3>Graduate Aptitude Test in Engineering (GATE) Qualified</h3>
+  <div class="agency">Indian Institute of Technology (IIT), India (Feb 2014)</div>
+</div>
+<div class="fund-item fade">
+  <h3>J. N. Tata Endowment Scholarship for Higher Education</h3>
+  <div class="agency">Mumbai, India (May 2011)</div>
+</div>
+<div class="fund-item fade">
+  <h3>M.Sc. College Topper Award</h3>
+  <div class="agency">Ramjas College, University of Delhi, India (Jun 2009)</div>
+</div>
+
+</div>
+<footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
+<script>const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.08});document.querySelectorAll('.fade').forEach(el=>obs.observe(el));</script>
 </body>
 </html>

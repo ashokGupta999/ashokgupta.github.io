@@ -10,196 +10,96 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
   --white:#ffffff;--bg:#f8f9fb;--fg:#1d1d1f;--fg2:#4a4a4f;--fg3:#8e8e93;
-  --blue:#1a5276;--blue-light:#eaf2f8;--blue-mid:#2e86c1;
-  --gold:#b7791f;--border:#e5e7eb;--card:#ffffff;
+  --blue:#1a5276;--blue-light:#eaf2f8;--gold:#b7791f;--border:#e5e7eb;
   --serif:'Source Serif 4',Georgia,serif;
   --sans:'Source Sans 3','Segoe UI',sans-serif;
   --max:1080px;
 }
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--white);color:var(--fg);line-height:1.7;-webkit-font-smoothing:antialiased}
-
-/* NAV */
-nav{border-bottom:1px solid var(--border);background:var(--white)}
-nav .inner{max-width:var(--max);margin:0 auto;padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
-nav .brand{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--blue);text-decoration:none}
-nav .links{display:flex;gap:2rem;flex-wrap:wrap}
-nav .links a{text-decoration:none;color:var(--fg3);font-size:.82rem;font-weight:500;transition:color .2s}
+html{scroll-behavior:smooth;font-size:17px}
+body{font-family:var(--sans);background:var(--white);color:var(--fg);line-height:1.75;-webkit-font-smoothing:antialiased}
+nav{border-bottom:1px solid var(--border);background:var(--white);position:sticky;top:0;z-index:100}
+nav .inner{max-width:var(--max);margin:0 auto;padding:.85rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .brand{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--blue);text-decoration:none}
+nav .links{display:flex;gap:1.8rem;flex-wrap:wrap}
+nav .links a{text-decoration:none;color:var(--fg3);font-size:.88rem;font-weight:500;transition:color .2s}
 nav .links a:hover,nav .links a.active{color:var(--blue)}
-
-/* HERO */
-.hero{max-width:var(--max);margin:0 auto;padding:3.5rem 2rem 3rem;display:grid;grid-template-columns:1fr 180px;gap:2.5rem;align-items:start}
-.hero-photo img{width:180px;height:220px;object-fit:cover;border-radius:8px;border:1px solid var(--border)}
-.hero-text h1{font-family:var(--serif);font-size:1.9rem;font-weight:600;line-height:1.25;margin-bottom:.2rem;color:var(--fg)}
-.hero-text .title-role{font-size:.95rem;color:var(--blue);font-weight:500;margin-bottom:.15rem}
-.hero-text .title-dept{font-size:.88rem;color:var(--fg2);margin-bottom:1rem}
-.hero-text .intro{font-size:.92rem;color:var(--fg2);font-weight:300;max-width:620px;margin-bottom:1.4rem;line-height:1.75}
+.hero{max-width:var(--max);margin:0 auto;padding:3.5rem 2rem 3rem;display:grid;grid-template-columns:1fr 200px;gap:2.5rem;align-items:start}
+.hero-photo img{width:200px;height:245px;object-fit:cover;border-radius:8px;border:1px solid var(--border)}
+.hero-text h1{font-family:var(--serif);font-size:2.1rem;font-weight:600;line-height:1.25;margin-bottom:.25rem}
+.hero-text .role{font-size:1.05rem;color:var(--blue);font-weight:500;margin-bottom:.1rem}
+.hero-text .dept{font-size:.95rem;color:var(--fg2);margin-bottom:1.1rem}
+.hero-text .intro{font-size:1rem;color:var(--fg2);font-weight:300;max-width:620px;margin-bottom:1.2rem;line-height:1.8}
 .hero-text .intro strong{color:var(--fg);font-weight:500}
-.contact-row{font-size:.84rem;color:var(--fg2);line-height:2}
+.contact-row{font-size:.92rem;color:var(--fg2);line-height:2.1}
 .contact-row a{color:var(--blue);text-decoration:none}
 .contact-row a:hover{text-decoration:underline}
 .hero-links{display:flex;gap:.6rem;margin-top:1.2rem;flex-wrap:wrap}
-.hero-links a{display:inline-flex;align-items:center;gap:.3rem;padding:.45rem 1rem;border-radius:5px;font-size:.8rem;font-weight:500;text-decoration:none;transition:all .2s}
-.btn-blue{background:var(--blue);color:#fff}
-.btn-blue:hover{background:#154360}
-.btn-outline{border:1px solid var(--border);color:var(--fg2)}
-.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
-
-/* SECTION DIVIDER */
-.divider{max-width:var(--max);margin:0 auto;padding:0 2rem}
-.divider hr{border:none;border-top:1px solid var(--border)}
-
-/* SECTIONS */
-section{max-width:var(--max);margin:0 auto;padding:2.5rem 2rem}
-section h2{font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--fg);margin-bottom:1.2rem;padding-bottom:.5rem;border-bottom:2px solid var(--blue);display:inline-block}
-
-/* RESEARCH LIST */
+.hero-links a{display:inline-flex;align-items:center;gap:.3rem;padding:.5rem 1.1rem;border-radius:5px;font-size:.88rem;font-weight:500;text-decoration:none;transition:all .2s}
+.btn-blue{background:var(--blue);color:#fff}.btn-blue:hover{background:#154360}
+.btn-outline{border:1px solid var(--border);color:var(--fg2)}.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.divider{max-width:var(--max);margin:0 auto;padding:0 2rem}.divider hr{border:none;border-top:1px solid var(--border)}
+section{max-width:920px;margin:0 auto;padding:2.5rem 2rem}
+section h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--fg);margin-bottom:1.2rem;padding-bottom:.45rem;border-bottom:2px solid var(--blue);display:inline-block}
 .research-list{list-style:none}
-.research-list li{padding:.9rem 0;border-bottom:1px solid var(--border)}
+.research-list li{padding:1rem 0;border-bottom:1px solid var(--border)}
 .research-list li:last-child{border-bottom:none}
-.research-list li h3{font-family:var(--serif);font-size:.98rem;font-weight:600;color:var(--fg);margin-bottom:.25rem}
-.research-list li p{font-size:.87rem;color:var(--fg2);font-weight:300;line-height:1.65;margin:0}
-
-/* PUB HIGHLIGHTS */
-.pub-grid{display:grid;grid-template-columns:1fr;gap:.8rem}
-.pub-item{padding:1rem 1.2rem;background:var(--bg);border-radius:6px;border-left:3px solid var(--blue);transition:background .2s}
+.research-list li h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--fg);margin-bottom:.3rem}
+.research-list li p{font-size:.97rem;color:var(--fg2);font-weight:300;line-height:1.7;margin:0}
+.pub-item{padding:1.1rem 1.3rem;background:var(--bg);border-radius:6px;border-left:3px solid var(--blue);margin-bottom:.8rem;transition:background .2s}
 .pub-item:hover{background:var(--blue-light)}
-.pub-item .badge{display:inline-block;font-size:.62rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.2rem .5rem;border-radius:3px;margin-bottom:.4rem}
-.badge-new{background:var(--blue);color:#fff}
-.badge-feat{background:var(--gold);color:#fff}
-.pub-item h3{font-family:var(--serif);font-size:.92rem;font-weight:600;line-height:1.35;margin-bottom:.2rem;color:var(--fg)}
-.pub-item .meta{font-size:.8rem;color:var(--blue);font-weight:500;margin-bottom:.3rem}
-.pub-item p{font-size:.84rem;color:var(--fg2);font-weight:300;line-height:1.6;margin:0}
-
-/* FOOTER */
-footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;font-size:.78rem;color:var(--fg3)}
-
-/* FADE */
-.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
-.fade.show{opacity:1;transform:translateY(0)}
-
-@media(max-width:700px){
-  .hero{grid-template-columns:1fr;text-align:center}
-  .hero-photo{display:flex;justify-content:center;order:-1}
-  .hero-photo img{width:150px;height:185px}
-  .hero-links{justify-content:center}
-  .contact-row{text-align:center}
-  nav .links{gap:1.2rem}
-}
+.pub-item .badge{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.2rem .55rem;border-radius:3px;margin-bottom:.4rem}
+.badge-new{background:var(--blue);color:#fff}.badge-feat{background:var(--gold);color:#fff}
+.pub-item h3{font-family:var(--serif);font-size:1rem;line-height:1.35;margin-bottom:.25rem;font-weight:600}
+.pub-item .meta{font-size:.9rem;color:var(--blue);font-weight:500;margin-bottom:.35rem}
+.pub-item p{font-size:.95rem;color:var(--fg2);font-weight:300;line-height:1.65;margin:0}
+footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;font-size:.85rem;color:var(--fg3)}
+.fade{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.fade.show{opacity:1;transform:translateY(0)}
+@media(max-width:700px){.hero{grid-template-columns:1fr;text-align:center}.hero-photo{display:flex;justify-content:center;order:-1}.hero-photo img{width:160px;height:200px}.hero-links{justify-content:center}.contact-row{text-align:center}nav .links{gap:1rem}}
 </style>
 </head>
 <body>
-
-<nav>
-  <div class="inner">
-    <a href="index.html" class="brand">Ashok K. Gupta</a>
-    <div class="links">
-      <a href="index.html" class="active">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="mentoring.html">Mentoring</a>
-      <a href="tools.html">Tools</a>
-      <a href="scidata.html">Data</a>
-      <a href="funding.html">Funding</a>
-    </div>
-  </div>
-</nav>
+<nav><div class="inner"><a href="index.html" class="brand">Ashok K. Gupta</a><div class="links"><a href="index.html" class="active">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="mentoring.html">Mentoring</a><a href="tools.html">Tools</a><a href="scidata.html">Data</a><a href="funding.html">Funding</a></div></div></nav>
 
 <div class="hero fade">
   <div class="hero-text">
     <h1>Ashok Kumar Gupta, Ph.D.</h1>
-    <div class="title-role">Staff Scientist</div>
-    <div class="title-dept">Department of Earth &amp; Environmental Sciences, Vanderbilt University</div>
-    <p class="intro">
-      I work at the intersection of <strong>aerosols, clouds, climate, and machine learning</strong>. My current efforts span deep-learning satellite algorithms for NASA's <strong>PolSIR</strong> mission, spectrally resolved polar cloud radiative diagnostics using NASA's <strong>PREFIRE</strong> observations, the role of <strong>mineral-dust INPs and secondary ice production</strong> in Arctic mixed-phase clouds, reconstruction of the 21st-century global dust cycle, and physics-informed ML for real-time volcanic cloud detection.
-    </p>
-    <div class="contact-row">
-      <strong>Email:</strong> <a href="mailto:ashok.k.gupta@vanderbilt.edu">ashok.k.gupta@vanderbilt.edu</a> · <a href="mailto:ashok.gupta352@gmail.com">ashok.gupta352@gmail.com</a><br>
-      <strong>Address:</strong> 5726 Stevenson Science Center, Nashville, TN 37240
-    </div>
-    <div class="hero-links">
-      <a href="publications.html" class="btn-blue">Publications</a>
-      <a href="https://scholar.google.com/citations?user=PiFGqo4AAAAJ" target="_blank" class="btn-outline">Google Scholar</a>
-      <a href="research.html" class="btn-outline">Research</a>
-    </div>
+    <div class="role">Staff Scientist</div>
+    <div class="dept">Department of Earth &amp; Environmental Sciences, Vanderbilt University</div>
+    <p class="intro">I work at the intersection of <strong>aerosols, clouds, climate, and machine learning</strong>. My current efforts span deep-learning satellite algorithms for NASA's <strong>PolSIR</strong> mission, spectrally resolved polar cloud radiative diagnostics using NASA's <strong>PREFIRE</strong> observations, the role of <strong>mineral-dust INPs and secondary ice production</strong> in Arctic mixed-phase clouds, reconstruction of the 21st-century global dust cycle, and physics-informed ML for real-time volcanic cloud detection.</p>
+    <div class="contact-row"><strong>Email:</strong> <a href="mailto:ashok.k.gupta@vanderbilt.edu">ashok.k.gupta@vanderbilt.edu</a> · <a href="mailto:ashok.gupta352@gmail.com">ashok.gupta352@gmail.com</a><br><strong>Address:</strong> 5726 Stevenson Science Center, Nashville, TN 37240</div>
+    <div class="hero-links"><a href="publications.html" class="btn-blue">Publications</a><a href="https://scholar.google.com/citations?user=PiFGqo4AAAAJ" target="_blank" class="btn-outline">Google Scholar</a><a href="research.html" class="btn-outline">Research</a></div>
   </div>
-  <div class="hero-photo">
-    <img src="figures/profile.jpg" alt="Ashok Kumar Gupta, Ph.D.">
-  </div>
+  <div class="hero-photo"><img src="figures/profile.jpg" alt="Ashok Kumar Gupta, Ph.D."></div>
 </div>
 
 <div class="divider"><hr></div>
 
-<section class="fade">
-  <h2>Research Areas</h2>
-  <ul class="research-list">
-    <li>
-      <h3>Aerosol–Cloud–Climate Interactions</h3>
-      <p>How aerosols govern cloud microphysics, precipitation pathways, and Earth's radiative balance via satellite observations, radiative transfer modeling, and cloud-resolving simulations.</p>
-    </li>
-    <li>
-      <h3>Arctic Mixed-Phase Clouds, INPs &amp; Secondary Ice Production</h3>
-      <p>Mineral-dust and biological ice-nucleating particles (INPs) and SIP mechanisms — rime splintering, ice–ice collisional breakup, freezing-drop fragmentation, sublimation breakup — controlling liquid–ice partitioning in high-latitude mixed-phase clouds.</p>
-    </li>
-    <li>
-      <h3>Polar Cloud Radiative Effects &amp; NASA PREFIRE</h3>
-      <p>Leveraging PREFIRE far-IR/IR spectral observations (~5–54 µm) to characterize spectrally resolved longwave cloud radiative effects across polar regions and evaluate reanalyses in measurement space.</p>
-    </li>
-    <li>
-      <h3>Global Dust Cycle &amp; Land–Atmosphere Feedbacks</h3>
-      <p>Reconstructing the 21st-century dust cycle via multi-sensor observations and inverse modeling; examining how land-use change, soil moisture, and vegetation modulate dust emissions and climate feedbacks.</p>
-    </li>
-    <li>
-      <h3>Volcanic Impacts on Climate</h3>
-      <p>How stratospheric injections of water vapor and SO₂ from eruptions perturb radiative forcing and surface temperatures — including the landmark 2022 Hunga Tonga eruption studies.</p>
-    </li>
-    <li>
-      <h3>Deep Learning for Satellite Retrievals</h3>
-      <p>Deep-learning algorithms for ice-cloud microphysical retrievals (NASA PolSIR) and physics-informed ML for near-real-time volcanic umbrella cloud detection from geostationary imagery.</p>
-    </li>
+<section>
+  <h2 class="fade">Research Areas</h2>
+  <ul class="research-list fade">
+    <li><h3>Aerosol–Cloud–Climate Interactions</h3><p>How aerosols govern cloud microphysics, precipitation pathways, and Earth's radiative balance via satellite observations, radiative transfer modeling, and cloud-resolving simulations.</p></li>
+    <li><h3>Arctic Mixed-Phase Clouds, INPs &amp; Secondary Ice Production</h3><p>Mineral-dust and biological ice-nucleating particles (INPs) and SIP mechanisms — rime splintering, ice–ice collisional breakup, freezing-drop fragmentation, sublimation breakup — controlling liquid–ice partitioning in high-latitude mixed-phase clouds.</p></li>
+    <li><h3>Polar Cloud Radiative Effects &amp; NASA PREFIRE</h3><p>Leveraging PREFIRE far-IR/IR spectral observations (~5–54 µm) to characterize spectrally resolved longwave cloud radiative effects across polar regions and evaluate reanalyses in measurement space.</p></li>
+    <li><h3>Global Dust Cycle &amp; Land–Atmosphere Feedbacks</h3><p>Reconstructing the 21st-century dust cycle via multi-sensor observations and inverse modeling; examining how land-use change, soil moisture, and vegetation modulate dust emissions and climate feedbacks.</p></li>
+    <li><h3>Volcanic Impacts on Climate</h3><p>How stratospheric injections of water vapor and SO₂ from eruptions perturb radiative forcing and surface temperatures — including the landmark 2022 Hunga Tonga eruption studies.</p></li>
+    <li><h3>Deep Learning for Satellite Retrievals</h3><p>Deep-learning algorithms for ice-cloud microphysical retrievals (NASA PolSIR) and physics-informed ML for near-real-time volcanic umbrella cloud detection from geostationary imagery.</p></li>
   </ul>
 </section>
 
 <div class="divider"><hr></div>
 
-<section class="fade">
-  <h2>Selected Publications</h2>
-  <div class="pub-grid">
-    <div class="pub-item">
-      <span class="badge badge-new">New 2026</span>
-      <h3>A global decline in atmospheric dust during the 21st century</h3>
-      <div class="meta">Gupta, Kok, Amiridis, Gkikas, Rizos, Proestakis, Logothetis, Marinou &amp; Pérez García-Pando · Science Advances (2026; accepted with minor revision)</div>
-      <p>Using large-ensemble inverse modeling, we show a global DAOD decline of −10 ± 8 % during 2003–2023 — the strongest evidence to date that the planet has become less dusty.</p>
-    </div>
-    <div class="pub-item">
-      <span class="badge badge-new">New 2026</span>
-      <h3>Desert dust exerts a substantial longwave radiative forcing missing from climate models</h3>
-      <div class="meta">Kok, Gupta et al. · Nature Communications (2026)</div>
-      <p>Present-day dust longwave DRE constrained to +0.25 ± 0.06 W m⁻² — nearly double the median of current climate models.</p>
-    </div>
-    <div class="pub-item">
-      <span class="badge badge-feat">Featured</span>
-      <h3>The January 2022 Hunga eruption cooled the Southern Hemisphere in 2022 and 2023</h3>
-      <div class="meta">Gupta, Mittal, Fauria, Bennartz &amp; Kok · Communications Earth &amp; Environment (2025)</div>
-      <p>Net radiative cooling of −0.55 ± 0.05 W m⁻² from sulfate aerosols, driving a −0.10 K Southern Hemisphere temperature anomaly.</p>
-    </div>
-    <div class="pub-item">
-      <span class="badge badge-feat">Featured</span>
-      <h3>Eruption chronology of the Hunga Tonga–Hunga Ha'apai eruption sequence</h3>
-      <div class="meta">Gupta, Bennartz, Fauria &amp; Mittal · Communications Earth &amp; Environment (2022)</div>
-      <p>Unprecedented umbrella cloud heights (~31 km) and two distinct ice-rich layers with volumetric flow rates of ~5.0 × 10¹¹ m³ s⁻¹.</p>
-    </div>
+<section>
+  <h2 class="fade">Selected Publications</h2>
+  <div class="fade">
+    <div class="pub-item"><span class="badge badge-new">New 2026</span><h3>A global decline in atmospheric dust during the 21st century</h3><div class="meta">Gupta, Kok, Amiridis, Gkikas, Rizos, Proestakis, Logothetis, Marinou &amp; Pérez García-Pando · Science Advances (2026; accepted with minor revision)</div><p>Global DAOD decline of −10 ± 8 % during 2003–2023 — the strongest evidence Earth has become less dusty.</p></div>
+    <div class="pub-item"><span class="badge badge-new">New 2026</span><h3>Desert dust exerts a substantial longwave radiative forcing missing from climate models</h3><div class="meta">Kok, Gupta et al. · Nature Communications (2026)</div><p>Present-day dust longwave DRE constrained to +0.25 ± 0.06 W m⁻² — nearly double climate model estimates.</p></div>
+    <div class="pub-item"><span class="badge badge-feat">Featured</span><h3>The January 2022 Hunga eruption cooled the Southern Hemisphere in 2022 and 2023</h3><div class="meta">Gupta, Mittal, Fauria, Bennartz &amp; Kok · Communications Earth &amp; Environment (2025)</div><p>Net radiative cooling of −0.55 ± 0.05 W m⁻² from sulfate aerosols, driving a −0.10 K Southern Hemisphere temperature anomaly.</p></div>
+    <div class="pub-item"><span class="badge badge-feat">Featured</span><h3>Eruption chronology of the Hunga Tonga–Hunga Ha'apai eruption sequence</h3><div class="meta">Gupta, Bennartz, Fauria &amp; Mittal · Communications Earth &amp; Environment (2022)</div><p>Unprecedented umbrella cloud heights (~31 km) and two distinct ice-rich layers with volumetric flow rates of ~5.0 × 10¹¹ m³ s⁻¹.</p></div>
   </div>
-  <p style="margin-top:1.2rem"><a href="publications.html" style="color:var(--blue);text-decoration:none;font-size:.88rem;font-weight:500">View all 13 publications &rarr;</a></p>
+  <p style="margin-top:1.2rem" class="fade"><a href="publications.html" style="color:var(--blue);font-weight:500;font-size:.97rem">View all 13 publications &rarr;</a></p>
 </section>
 
-<footer>
-  <p>&copy; 2026 Ashok Kumar Gupta, Ph.D. &middot; Vanderbilt University</p>
-</footer>
-
-<script>
-const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.1});
-document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
-</script>
+<footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
+<script>const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.1});document.querySelectorAll('.fade').forEach(el=>obs.observe(el));</script>
 </body>
 </html>
